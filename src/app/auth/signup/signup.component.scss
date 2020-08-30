@@ -1,0 +1,107 @@
+.app-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .left-panel {
+        .header {
+            background: #f2d184;
+            padding-left: 40px;
+            .title {
+                color: #866118;
+                margin-top: 30px;
+                font-size: 2em;
+                font-weight: 600;
+            }
+            .text {
+                color: #866118;
+                margin-top: 30px;
+                font-size: 2em;
+                font-weight: 600;
+                width: 100%;
+            }
+        }
+        .image {
+            height: 100%;
+            background-color: #f0cd87;
+            img {
+                width: 100%;
+            }
+        }
+        .text-footer {
+            padding-left: 40px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .right-panel {
+        padding: 30px 1px;
+        .paragraph {
+            text-align: end;
+            a {
+                text-decoration: none;
+                color: #6f5fd3;
+            }
+        }
+        .title-body {
+            font-size: 1.85em;
+            font-weight: 600;
+            margin-top: 20px;
+            padding-left: 15px;
+        }
+        .mybutton {
+            background: #4285f4;
+            width: 70%;
+            padding: 1px;
+            border-radius: 10px;
+            font-size: 0.90em;
+        }
+        .button-twiter {
+            margin-left: 15px;
+            background: #f2f2f2;
+            color: #6e6d7a;
+            width: 50px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .form-body {
+            mat-form-field {
+                width: 100%;
+            }
+        }
+        .check-list {
+            max-width: 377px;
+            .text-link {
+                color: #72717e;
+                text-decoration: none;
+                margin-left: 1px;
+                .item-link {
+                    text-decoration: none;
+                    color: #5d4ccd;
+                }
+            }
+        }
+        .create-button {
+            background: #ea4c89;
+            text-transform: capitalize;
+            width: 190px;
+            padding: 2px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .text-privacy {
+            color: #b2b2b9;
+            font-size: 0.90em;
+            a {
+                text-decoration: none;
+                color: #5d4ccd;
+            }
+        }
+    }
+}

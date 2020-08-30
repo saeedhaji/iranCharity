@@ -1,0 +1,75 @@
+<div class="app-signin">
+    <div fxFlex class="left-panel" fxHide.lt-md>
+
+        <div fxLayout="column">
+            <div class="header">
+                <h1 class="title">Charity</h1>
+                <div style="max-width: 305px;">
+                    <h2 class="text">
+                        Discover the world’s top Designers & Creatives.
+                    </h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./assets/img/img2.jpg" alt="">
+                <div class="text-footer">
+                    <p>
+                        Art by
+                        <a href="">
+                            Ira Karicca
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div fxFlex class="right-panel">
+        <div fxLayout="column">
+            <div class="paragraph" fxHide.lt-md>
+                <p>
+                    Not a member?
+                    <a href="">
+                        Sign up now
+                </a>
+                </p>
+            </div>
+            <h2 class="title-body">Sign in to Charity</h2>
+            <div fxLayout="row" style="padding-left: 15px;margin-top: 15px;padding-bottom: 40px;">
+                <button class="mybutton" mat-flat-button color="primary">
+                <mat-icon>format_bold</mat-icon>
+                Sign in with Google
+            </button>
+                <a href="" class="button-twiter">
+                    <mat-icon>face</mat-icon>
+                </a>
+            </div>
+
+            <mat-divider></mat-divider>
+            <form action="" style="padding-left: 15px;margin-top: 20px;">
+                <div class="form-body">
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Username or Email Address</mat-label>
+                        <input matInput placeholder="Placeholder">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <div fxFlex class="form-body">
+                        <mat-form-field appearance="legacy">
+                            <mat-label>Password</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex style="display: flex;
+                    align-items: center;
+                    justify-content: center;">
+                        <a class="item-password" href="">Forgot Password?</a>
+
+                    </div>
+
+                </div>
+                <button class="create-button" mat-flat-button color="primary">Sign in</button>
+            </form>
+        </div>
+    </div>
+</div>
