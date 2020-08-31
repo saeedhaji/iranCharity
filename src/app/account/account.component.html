@@ -1,1 +1,44 @@
-<p>account works!</p>
+<div class="app-account">
+    <div fxlayout="row" fxLayoutAlign="center center" class="container">
+        <div fxFlex class="container-header">
+            <h2 class="header">s</h2>
+        </div>
+        <div fxFlex>
+            <div fxLayout="column">
+                <h2 class="title">saeed hajiaghazadeh</h2>
+                <p>rey</p>
+            </div>
+            <div fxLayout="row">
+                <button class="edit-button" mat-flat-button>Edit Profile</button>
+                <button class="icon-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_horiz</mat-icon>
+                  </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                      <mat-icon>dialpad</mat-icon>
+                      <span>Redial</span>
+                    </button>
+                    <button mat-menu-item disabled>
+                      <mat-icon>voicemail</mat-icon>
+                      <span>Check voice mail</span>
+                    </button>
+                    <button mat-menu-item>
+                      <mat-icon>notifications_off</mat-icon>
+                      <span>Disable alerts</span>
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row" style="width: 100%;
+    padding-top: 20px;">
+        <mat-tab-group animationDuration="0ms">
+            <mat-tab label="Boosted Shots">Content 1</mat-tab>
+            <mat-tab label="Collections">Content 2</mat-tab>
+            <mat-tab label="Liked Shots">Content 3</mat-tab>
+            <mat-tab label="About">Content 4</mat-tab>
+        </mat-tab-group>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>

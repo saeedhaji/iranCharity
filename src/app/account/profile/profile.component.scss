@@ -1,0 +1,55 @@
+.app-profile {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // position: absolute;
+        // right: 35px;
+        color: #fff;
+        background: #5b6bc2;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 40px;
+        font-size: 3em;
+        font-weight: 500;
+        // top: -50px;
+    }
+    .upload {
+        border-radius: 6px;
+        background: #ea4c89;
+        color: #fff;
+    }
+    .delete {
+        background: #f3f3f4;
+        color: black;
+        border-radius: 5px;
+    }
+    .form-body {
+        .label {
+            font-size: 1em;
+            font-weight: 500;
+            color: #323143;
+        }
+        mat-form-field {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+    .list {
+        padding-bottom: 20px;
+        .item-list {
+            text-transform: uppercase;
+            color: #73727e;
+            margin-left: -12px;
+            font-weight: 600;
+            font-size: 1em;
+        }
+    }
+    .button-profile {
+        background: #ea4c89;
+        border-radius: 8px;
+        color: #fff;
+        margin-top: 20px;
+    }
+}
