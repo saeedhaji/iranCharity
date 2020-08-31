@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AccountComponent } from "./account.component";
-
+import {AccountIndexComponent} from './account-index.component';
 
 const routes: Routes = [
   {
     path:'',
     component:AccountComponent,
+  },
+  {
+    path: 'edit',
+    component:AccountIndexComponent,
     children:[
       {
         path: '',
-        redirectTo:'profile',
+        redirectTo: 'profile'
       },
       {
         path: 'profile',
@@ -21,7 +25,7 @@ const routes: Routes = [
         loadChildren:()=>import('./password/password.module').then((m)=>m.PasswordModule),
       },
     ]
-  }
+  },
 ];
 
 @NgModule({

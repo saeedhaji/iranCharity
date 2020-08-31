@@ -1,26 +1,6 @@
 <div class="app-profile">
-    <div fxLayout="row" fxLayoutAlign="">
-        <div fxFlex style="position: relative;">
-            <div fxLayout="column" style="position: absolute;right: 200px;">
-                <button mat-button [matMenuTriggerFor]="aboveMenu">Edit Profile</button>
-                <mat-menu #aboveMenu="matMenu" yPosition="above">
-                    <button mat-menu-item>Item 1</button>
-                    <button mat-menu-item>Item 2</button>
-                </mat-menu>
-
-                <button mat-button [matMenuTriggerFor]="belowMenu">Public Profile</button>
-                <mat-menu #belowMenu="matMenu" yPosition="below">
-                    <button mat-menu-item>Item 1</button>
-                    <button mat-menu-item>Item 2</button>
-                </mat-menu>
-
-                <button mat-button [matMenuTriggerFor]="beforeMenu">Password</button>
-                <mat-menu #beforeMenu="matMenu" xPosition="before">
-                    <button mat-menu-item>Item 1</button>
-                    <button mat-menu-item>Item 2</button>
-                </mat-menu>
-            </div>
-        </div>
+    <div fxLayout="row" fxLayoutAlign="" style="width: 100%;
+    padding: 25px;">
         <div fxFlex>
             <div fxLayout="row" fxLayoutGap="10px" style="display: flex;
             align-items: center;
@@ -32,11 +12,11 @@
                 </div>
             </div>
             <div fxLayout="column">
-                <form action="">
+                <form [formGroup]="loginForm" (submit)="onSubmit()">
                     <div class="form-body">
                         <mat-form-field appearance="legacy">
                             <mat-label class="label">Name</mat-label>
-                            <input matInput placeholder="Placeholder">
+                            <input formControlName="name" matInput placeholder="Placeholder">
                             <mat-hint>We’re big on real names around here, so people know who’s who.</mat-hint>
                         </mat-form-field>
                     </div>
@@ -44,13 +24,13 @@
 
                         <mat-form-field appearance="legacy">
                             <mat-label class="label">Location</mat-label>
-                            <input matInput placeholder="Placeholder">
+                            <input formControlName="location" matInput placeholder="Placeholder">
                         </mat-form-field>
                     </div>
                     <div class="form-body">
                         <mat-form-field appearance="legacy">
                             <mat-label class="label">Bio</mat-label>
-                            <textarea matInput></textarea>
+                            <textarea formControlName="description" matInput></textarea>
                             <mat-hint>Brief description for your profile. URLs are hyperlinked.</mat-hint>
                         </mat-form-field>
                     </div>
@@ -65,28 +45,28 @@
                     <div class="form-body">
                         <mat-form-field appearance="legacy">
                             <mat-label class="label">Personal website</mat-label>
-                            <input matInput placeholder="Placeholder">
+                            <input formControlName="website" matInput placeholder="Placeholder">
                             <mat-hint>Your home page, blog, or company site.</mat-hint>
                         </mat-form-field>
                     </div>
 
                     <div fxLayout="row" fxLayoutGap="10px">
-                        <div class="form-body">
+                        <div class="form-body" style="width: 100%;">
                             <mat-form-field appearance="legacy">
                                 <mat-label class="label">Portfolio URL</mat-label>
-                                <input matInput placeholder="Placeholder">
+                                <input formControlName="url" matInput placeholder="Placeholder">
                                 <mat-hint>Only shared with potential employers.</mat-hint>
                             </mat-form-field>
                         </div>
-                        <div class="form-body">
+                        <div class="form-body" style="width: 100%;">
                             <mat-form-field appearance="legacy">
                                 <mat-label class="label">Portfolio password</mat-label>
-                                <input matInput placeholder="Placeholder">
+                                <input formControlName="password" matInput placeholder="Placeholder">
                                 <mat-hint>Only if needed.</mat-hint>
                             </mat-form-field>
                         </div>
                     </div>
-                    <button class=" button-profile" mat-flat-button>Save Profile</button>
+                    <button type="submit" class=" button-profile" mat-flat-button>Save Profile</button>
                 </form>
             </div>
         </div>

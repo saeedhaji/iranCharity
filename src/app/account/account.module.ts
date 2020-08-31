@@ -19,6 +19,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
+import { AccountIndexComponent } from "./account-index.component";
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -31,11 +33,15 @@ const MATERIAL_MODULES = [
   MatSelectModule,
   MatTooltipModule,
   MatTabsModule,
-  MatMenuModule
+  MatMenuModule,
+  MatSidenavModule
 ];
 
 @NgModule({
-  declarations: [AccountComponent],
+  declarations: [
+    AccountComponent,
+    AccountIndexComponent
+  ],
   imports: [
     CommonModule,
     AccountRoutingModule,

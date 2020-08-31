@@ -1,0 +1,16 @@
+<div class="account-container">
+
+    <mat-drawer-container class="main-container" autosize>
+        <mat-drawer fxHide.lt-md style="min-width: 200px;border-right: 0;padding: 26px;" [opened]="true" #drawer class="example-sidenav" mode="side">
+            <h1>Menu</h1>
+            <button style="outline: none;" mat-button routerLink="/account/edit/profile">profile</button><br/>
+            <button style="outline: none;" mat-button routerLink="/account/edit/password">password</button>
+
+        </mat-drawer>
+
+        <div class="example-sidenav-content px-md-5" style="background-color: #fff;">
+            <router-outlet></router-outlet>
+        </div>
+
+    </mat-drawer-container>
+</div>
