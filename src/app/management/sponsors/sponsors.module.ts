@@ -18,6 +18,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { SponsorsListModule } from "./sponsors-list/sponsors-list.module";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -39,6 +40,7 @@ const MATERIAL_MODULES = [
   imports: [
     CommonModule,
     SponsorsRoutingModule,
+    SponsorsListModule,
     ... MATERIAL_MODULES, 
     FormsModule ,
     FlexLayoutModule,

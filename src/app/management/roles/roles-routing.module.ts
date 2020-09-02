@@ -6,7 +6,17 @@ import { RolesComponent } from "./roles.component";
 const routes: Routes = [
   {
     path:'',
-    component:RolesComponent
+    component:RolesComponent,
+    children:[
+      {
+        path: '',
+        redirectTo:'roles-list',
+      },
+      {
+        path: 'roles-list',
+        loadChildren:()=>import('./roles-list/roles-list.module').then((m)=>m.RolesListModule),
+      },
+    ]
   }
 ];
 

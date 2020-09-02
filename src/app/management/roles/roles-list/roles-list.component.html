@@ -1,0 +1,63 @@
+<div class="app-roles-list">
+    <div fxLayout="row" class="roles-container">
+        <div fxFlex>
+            <div fxLayout=column>
+                <div class="header">
+                    <mat-icon class="icon-add">add</mat-icon>
+                    <button class="create-button" mat-raised-button (click)="openDialog()">create roles</button>
+                </div>
+                <div class="add-contact">
+                    <mat-icon class="icon-contact">face</mat-icon>
+                    roles
+                </div>
+                <div class="freguently-contact">
+                    <mat-icon class="icon-history">history</mat-icon>
+                    Freguently roles
+                </div>
+            </div>
+            <mat-divider style="width: 265px;"></mat-divider>
+            <div fxLayout="row" fxLayoutGap="75px" style="margin-top: 10px;
+            align-items: center">
+                <div fxFlelx style="display: flex;
+                align-items: center;">
+                    <mat-icon class="icon-delete">delete_outline</mat-icon>
+                    <button class="button-trash" mat-flat-button>Trash</button>
+                </div>
+                <button class="button-new" mat-flat-button color="primary">new</button>
+
+            </div>
+        </div>
+
+        <div fxFlex fxLayout="row">
+            <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                    <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                    <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="symbol">
+                    <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+        </div>
+    </div>
+</div>
+<button class="create-button" mat-raised-button (click)="openDialogOne()">detail roles</button>

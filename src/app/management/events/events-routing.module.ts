@@ -6,7 +6,18 @@ import { EventsComponent } from "./events.component";
 const routes: Routes = [
   {
     path:'',
-    component:EventsComponent
+    component:EventsComponent,
+    children:[
+      {
+        path: '',
+        redirectTo:'events-list',
+      },
+      {
+        path: 'events-list',
+        loadChildren:()=>import('./events-list/events-list.module').then((m)=>m.EventsListModule),
+
+      },
+    ]
   }
 ];
 

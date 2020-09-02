@@ -1,0 +1,59 @@
+<div class="app-events-detail" style="padding: 15px 0px;">
+    <div fxLayout="row" style="padding: 25px 0px;">
+        <div fxFlex>
+            <span class="header-detail">M</span>
+        </div>
+        <div fxFlex style="margin-left: -160px;">
+            <div fxLayout="column" style="position: relative;">
+                <h3 class="text-name">mohammad Hagi</h3>
+                <div class="label">
+                    <mat-icon>label</mat-icon>
+                    No Label
+                </div>
+            </div>
+        </div>
+        <div fxFlex>
+            <div style="position: relative;">
+                <mat-icon class="icon-star">star_border</mat-icon>
+                <mat-icon class="icon-edit" (click)="openDialog()">edit</mat-icon>
+                <button class="button-menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                  <mat-icon>dialpad</mat-icon>
+                  <span>Redial</span>
+                </button>
+                    <button mat-menu-item disabled>
+                  <mat-icon>voicemail</mat-icon>
+                  <span>Check voice mail</span>
+                </button>
+                    <button mat-menu-item>
+                  <mat-icon>notifications_off</mat-icon>
+                  <span>Disable alerts</span>
+                </button>
+                </mat-menu>
+                <button class="button-clear" mat-icon-button mat-dialog-close>
+                  <mat-icon>clear</mat-icon>
+              </button>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout=column>
+        <h3 style="margin-top: 10px;">events details</h3>
+        <div class="body-domain">
+            <mat-icon class="icon-domain">domain</mat-icon>
+            dev,vira
+        </div>
+        <div class="body-mail">
+            <mat-icon class="icon-mail">mail_outline</mat-icon>
+            mohammad@gmail.com
+        </div>
+        <div class="body-phone">
+            <mat-icon class="icon-phone">phone</mat-icon>
+            09213533212
+            <mat-icon class="icon-speaker">speaker_notes</mat-icon>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+<div class="app-users-detail" style="padding: 15px 0px;">
+    <div fxLayout="row" style="padding: 25px 0px;">
+        <div fxFlex>
+            <span style="border-radius: 50%;
+            background: #00897b;
+            padding: 10px;
+            color: #fff;
+            text-transform: lowercase;
+            font-size: 2em;">M</span>
+        </div>
+        <div fxFlex style="margin-left: -160px;">
+            <div fxLayout="column" style="position: relative;">
+                <h3 style="font-size: 1.4em;
+                position: absolute;
+                bottom: -17px;">mohammad Hagi</h3>
+                <div style="    display: flex;
+                border: 1px solid;
+                width: 100px;
+                border-radius: 10px;
+                position: absolute;
+                top: 5px;">
+                    <mat-icon>label</mat-icon>
+                    No Label
+                </div>
+            </div>
+        </div>
+        <div fxFlex>
+            <div style="position: relative;">
+                <mat-icon style="top: -12px;
+                position: absolute;
+                right: 110px;">star_border</mat-icon>
+                <mat-icon style="    top: -12px;
+                position: absolute;
+                right: 70px;" (click)="openDialog()">edit</mat-icon>
+                <button style="top: -20px;
+                position: absolute;
+                right: 25px;outline: none; " mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                  <mat-icon>dialpad</mat-icon>
+                  <span>Redial</span>
+                </button>
+                    <button mat-menu-item disabled>
+                  <mat-icon>voicemail</mat-icon>
+                  <span>Check voice mail</span>
+                </button>
+                    <button mat-menu-item>
+                  <mat-icon>notifications_off</mat-icon>
+                  <span>Disable alerts</span>
+                </button>
+                </mat-menu>
+                <button style="top: -20px;
+                position: absolute;
+                right: -5px;" mat-icon-button mat-dialog-close>
+                  <mat-icon>clear</mat-icon>
+              </button>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div fxLayout=column>
+        <h3 style="margin-top: 10px;">contact details</h3>
+        <div style="display: flex;
+        align-items: center;">
+            <mat-icon style="color: #8f9091;
+            margin-right: 10px;">domain</mat-icon>
+            dev,vira
+        </div>
+        <div style="display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: #7297ff;">
+            <mat-icon style="color: #8f9091;
+            margin-right: 10px;">mail_outline</mat-icon>
+            mohammad@gmail.com
+        </div>
+        <div style="display: flex;
+        align-items: center;
+        margin-top: 10px;">
+            <mat-icon style="color: #8f9091;
+            margin-right: 10px;">phone</mat-icon>
+            09213533212
+            <mat-icon style="color: #22a565;
+            margin-left: 10px;">speaker_notes</mat-icon>
+        </div>
+    </div>
+</div>

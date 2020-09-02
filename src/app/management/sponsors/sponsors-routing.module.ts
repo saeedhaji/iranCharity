@@ -6,7 +6,17 @@ import { SponsorsComponent } from "./sponsors.component";
 const routes: Routes = [
   {
     path:'',
-    component:SponsorsComponent
+    component:SponsorsComponent,
+    children:[
+      {
+        path: '',
+        redirectTo:'sponsors-list',
+      },
+      {
+        path: 'sponsors-list',
+        loadChildren:()=>import('./sponsors-list/sponsors-list.module').then((m)=>m.SponsorsListModule),
+      },
+    ]
   }
 ];
 

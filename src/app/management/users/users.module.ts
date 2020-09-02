@@ -18,6 +18,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { UsersListModule } from "./users-list/users-list.module";
+import {MatDividerModule} from '@angular/material/divider';
+import { UsersShowModule } from "./users-show/users-show.module";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -31,7 +34,8 @@ const MATERIAL_MODULES = [
   MatTooltipModule,
   MatTabsModule,
   MatMenuModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatDividerModule
 ];
 
 @NgModule({
@@ -43,6 +47,8 @@ const MATERIAL_MODULES = [
     FormsModule ,
     FlexLayoutModule,
     ReactiveFormsModule,
+    UsersListModule,
+    UsersShowModule
   ]
 })
 export class UsersModule { }

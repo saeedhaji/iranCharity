@@ -18,6 +18,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { RolesListModule } from "./roles-list/roles-list.module";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -43,6 +44,7 @@ const MATERIAL_MODULES = [
     FormsModule ,
     FlexLayoutModule,
     ReactiveFormsModule,
+    RolesListModule
   ]
 })
 export class RolesModule { }

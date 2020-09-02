@@ -1,0 +1,30 @@
+.app-sponsors-add {
+    .header-sponsors {
+        display: flex;
+        border: 1px solid;
+        width: 100px;
+        border-radius: 30px;
+        padding: 3px 9px;
+        position: absolute;
+        right: 163px;
+        top: -2px;
+    }
+    .button-showmore {
+        color: #2278e8;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+    .button-cancel {
+        color: #2278e8;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+    .button-save {
+        color: #c3c4c5;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+}

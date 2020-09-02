@@ -1,0 +1,74 @@
+.app-calendars-list {
+    .calendars-container {
+        border: 1px solid;
+        padding: 25px;
+        box-shadow: 0px 4px 8px 3px #ebebeb;
+        background: #fff;
+        border-radius: 3px;
+        border-style: none;
+        min-height: 325px;
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
+            border: 1px solid;
+            width: 183px;
+            border-radius: 23px;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+            padding: 7px 10px;
+            border-style: none;
+            outline: none;
+            background: #fff;
+            .icon-add {
+                font-size: 2.2em;
+                z-index: 1;
+            }
+            .create-button {
+                box-shadow: unset;
+                font-size: 1.25em;
+                display: flex;
+                align-items: center;
+                outline: none;
+            }
+        }
+        .add-calendars {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            background: #e8f0fe;
+            width: 228px;
+            border-radius: 20px;
+            padding: 9px 10px;
+            color: #3f81da;
+            .icon-calendars {
+                margin-right: 15px;
+            }
+        }
+        .freguently-calendars {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            .icon-history {
+                color: #b7b7b7;
+                margin-right: 15px;
+            }
+        }
+        .icon-delete {
+            color: #b7b7b7;
+        }
+        .button-trash {
+            background: #fff;
+            color: black;
+            outline: none;
+        }
+        .button-new {
+            background: #1967d2;
+            text-transform: capitalize;
+            height: 30px;
+            min-width: 48px;
+            padding: 0;
+            font-size: 1.2em;
+            border-radius: 6px;
+        }
+    }
+}

@@ -6,7 +6,17 @@ import { UsersComponent } from "./users.component";
 const routes: Routes = [
   {
     path:'',
-    component:UsersComponent
+    component:UsersComponent,
+    children:[
+      {
+        path: '',
+        redirectTo:'users-list',
+      },
+      {
+        path: 'users-list',
+        loadChildren:()=>import('./users-list/users-list.module').then((m)=>m.UsersListModule),
+      },
+    ]
   }
 ];
 

@@ -1,1 +1,14 @@
-<p>management works!</p>
+<div class="app-management p-4">
+
+    <div gdGap="20px" gdColumns="repeat(auto-fill, minmax(203px, 1fr))">
+        <mat-card *ngFor="let item of cardList" [routerLink]="item.url">
+            <mat-icon>{{item.image}}</mat-icon>
+            <mat-card-content>
+                <p>
+                    {{item.name}}
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+<router-outlet></router-outlet>

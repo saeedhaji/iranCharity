@@ -1,0 +1,42 @@
+.app-calendars-show {
+    .header {
+        display: flex;
+        border: 1px solid;
+        width: 100px;
+        border-radius: 30px;
+        padding: 3px 9px;
+        position: absolute;
+        left: 142px;
+        top: -2px;
+    }
+    .content {
+        overflow: auto;
+        max-height: 300px;
+    }
+    .content-body {
+        display: flex;
+        align-items: center;
+    }
+    .icon {
+        color: #8f9091;
+        margin-right: 10px;
+    }
+    .button-showmore {
+        color: #2278e8;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+    .button-cancel {
+        color: #2278e8;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+    .button-save {
+        color: #c3c4c5;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+}

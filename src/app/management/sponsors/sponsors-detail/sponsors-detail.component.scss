@@ -1,0 +1,75 @@
+.app-sponsors-detail {
+    .header-detail {
+        border-radius: 50%;
+        background: #00897b;
+        padding: 10px;
+        color: #fff;
+        text-transform: lowercase;
+        font-size: 2em;
+    }
+    .text-name {
+        font-size: 1.4em;
+        position: absolute;
+        bottom: -17px;
+    }
+    .label {
+        display: flex;
+        border: 1px solid;
+        width: 100px;
+        border-radius: 10px;
+        position: absolute;
+        top: 5px;
+    }
+    .icon-star {
+        top: -12px;
+        position: absolute;
+        right: 110px;
+    }
+    .icon-edit {
+        top: -12px;
+        position: absolute;
+        right: 70px;
+    }
+    .button-menu {
+        top: -20px;
+        position: absolute;
+        right: 25px;
+        outline: none;
+    }
+    .button-clear {
+        top: -20px;
+        position: absolute;
+        right: -5px;
+    }
+    .body-domain {
+        display: flex;
+        align-items: center;
+        .icon-domain {
+            color: #8f9091;
+            margin-right: 10px;
+        }
+    }
+    .body-mail {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: #7297ff;
+        .icon-mail {
+            color: #8f9091;
+            margin-right: 10px;
+        }
+    }
+    .body-phone {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        .icon-phone {
+            color: #8f9091;
+            margin-right: 10px;
+        }
+        .icon-speaker {
+            color: #22a565;
+            margin-left: 10px;
+        }
+    }
+}
