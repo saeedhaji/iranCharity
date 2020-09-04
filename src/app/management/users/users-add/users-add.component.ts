@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
 import { UsersShowComponent } from "../users-show/users-show.component";
+import { FormGroup } from "@angular/forms";
+import { USER_FORM } from "./user-form";
 
 @Component({
   selector: 'app-users-add',
@@ -9,6 +11,7 @@ import { UsersShowComponent } from "../users-show/users-show.component";
 })
 export class UsersAddComponent implements OnInit {
 
+  userForm:FormGroup=USER_FORM.create();
   constructor(public dialog: MatDialog) { }
 
 
@@ -26,4 +29,11 @@ export class UsersAddComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    if(this.userForm.valid){
+      console.log(this.userForm.getRawValue());
+    }else{
+      console.log('saeed')
+    }
+  }
 }

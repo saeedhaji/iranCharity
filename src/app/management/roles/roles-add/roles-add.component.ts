@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
 import { RolesShowComponent } from "../roles-show/roles-show.component";
+import { FormGroup } from "@angular/forms";
+import { ROLE_FORM } from "./role-form";
 
 @Component({
   selector: 'app-roles-add',
@@ -9,6 +11,7 @@ import { RolesShowComponent } from "../roles-show/roles-show.component";
 })
 export class RolesAddComponent implements OnInit {
 
+  roleForm:FormGroup=ROLE_FORM.create();
   constructor(public dialog: MatDialog) { }
 
 
@@ -26,5 +29,11 @@ export class RolesAddComponent implements OnInit {
   
   ngOnInit(): void {
   }
-
+  onSubmit(){
+    if(this.roleForm.valid){
+      console.log(this.roleForm.getRawValue());
+    }else{
+      console.log('saeed')
+    }
+  }
 }

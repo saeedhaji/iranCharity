@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
 import { CalendarsShowComponent } from "../calendars-show/calendars-show.component";
+import { FormGroup } from "@angular/forms";
+import { CALENDAR_FORM } from "./calendar-form";
 
 @Component({
   selector: 'app-calendars-add',
@@ -9,6 +11,7 @@ import { CalendarsShowComponent } from "../calendars-show/calendars-show.compone
 })
 export class CalendarsAddComponent implements OnInit {
 
+  calendarForm:FormGroup=CALENDAR_FORM.create();
 
   constructor(public dialog: MatDialog) { }
 
@@ -28,4 +31,11 @@ export class CalendarsAddComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    if(this.calendarForm.valid){
+      console.log(this.calendarForm.getRawValue());
+    }else{
+      console.log('saeed')
+    }
+  }
 }
