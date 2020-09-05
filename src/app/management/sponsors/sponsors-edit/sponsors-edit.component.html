@@ -8,7 +8,7 @@
     </div>
     <mat-divider></mat-divider>
     <div fxLayout="column">
-        <form action="">
+        <form action="" [formGroup]="editForm" (submit)="onSubmit()">
 
             <div fxLayout="row" fxLayoutGap="10px" class="body">
                 <div fxFlex>
@@ -17,13 +17,13 @@
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>first name</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="firstName" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>last name</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="lastName" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
             </div>
@@ -35,13 +35,13 @@
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>company</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="company" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>job title</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="jobTitle" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
             </div>
@@ -53,13 +53,13 @@
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>email</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="email" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>label</mat-label>
-                        <mat-select disableRipple>
+                        <mat-select disableRipple formControlName="option">
                             <mat-option value="1">Option 1</mat-option>
                             <mat-option value="2">Option 2</mat-option>
                             <mat-option value="3">Option 3</mat-option>
@@ -75,7 +75,7 @@
                 <div fxFlex>
                     <mat-form-field appearance="lagacy" class="w-100">
                         <mat-label></mat-label>
-                        <mat-select disableRipple>
+                        <mat-select disableRipple formControlName="optionOne">
                             <mat-option value="1">Option 1</mat-option>
                             <mat-option value="2">Option 2</mat-option>
                             <mat-option value="3">Option 3</mat-option>
@@ -85,12 +85,12 @@
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>phone</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="phone" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-label>label</mat-label>
-                    <mat-select disableRipple>
+                    <mat-select disableRipple formControlName="optionTwo">
                         <mat-option value="1">Option 1</mat-option>
                         <mat-option value="2">Option 2</mat-option>
                         <mat-option value="3">Option 3</mat-option>
@@ -103,7 +103,7 @@
                 <mat-icon class="icon">insert_drive_file</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>notes</mat-label>
-                    <input matInput placeholder="Placeholder">
+                    <input formControlName="notes" matInput placeholder="Placeholder">
                 </mat-form-field>
             </div>
             <mat-divider></mat-divider>
@@ -113,8 +113,8 @@
                     <button class="button-showmore" mat-flat-button color="primary">show more</button>
                 </div>
                 <div fxFlex fxLayoutGap="10px">
-                    <button class="button-cancel" mat-flat-button color="primary">cancel</button>
-                    <button class="button-save" mat-flat-button color="primary">save</button>
+                    <button class="button-cancel" mat-dialog-close>cancel</button>
+                    <button type="submit" class="button-save" mat-flat-button color="primary">save</button>
                 </div>
             </div>
 

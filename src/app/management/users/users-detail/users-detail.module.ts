@@ -17,6 +17,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatDialogModule } from "@angular/material/dialog";
 
 
 const MATERIAL_MODULES = [
@@ -32,7 +33,8 @@ const MATERIAL_MODULES = [
   MatTabsModule,
   MatMenuModule,
   MatSidenavModule,
-  MatDividerModule
+  MatDividerModule,
+  MatDialogModule
 ];
 
 

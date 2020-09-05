@@ -1,75 +1,65 @@
 <div class="app-users-edit">
     <div fxLayout="row" style="position: relative;">
         <h4>Edit contact</h4>
-        <div style="display: flex;
-        border: 1px solid;
-        width: 100px;
-        border-radius: 30px;
-        padding: 3px 9px;
-        position: absolute;
-        left: 92px;
-        top: -3px;">
+        <div class="users-header">
             <mat-icon>label</mat-icon>
             No Label
         </div>
     </div>
     <mat-divider></mat-divider>
     <div fxLayout="column">
-        <form action="">
+        <form action="" [formGroup]="editForm" (submit)="onSubmit()">
 
-            <div fxLayout="row" fxLayoutGap="10px" style="display: flex;
-            align-items: center;">
+            <div fxLayout="row" fxLayoutGap="10px" class="body">
                 <div fxFlex>
-                    <mat-icon style="color: #e5e5e5;">face</mat-icon>
+                    <mat-icon class="icon">face</mat-icon>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>first name</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="firstName" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>last name</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="lastName" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
             </div>
 
-            <div fxLayout="row" fxLayoutGap="10px" style="display: flex;
-            align-items: center;">
+            <div fxLayout="row" fxLayoutGap="10px">
                 <div fxFlex>
-                    <mat-icon style="color: #e5e5e5;">view_list</mat-icon>
+                    <mat-icon class="icon">view_list</mat-icon>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>company</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="company" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>job title</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="jobTitle" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
             </div>
 
-            <div fxLayout="row" fxLayoutGap="10px" style="display: flex;
-            align-items: center;">
+            <div fxLayout="row" fxLayoutGap="10px" class="body">
                 <div fxFlex>
-                    <mat-icon style="color: #e5e5e5;">mail_outline</mat-icon>
+                    <mat-icon class="icon">mail_outline</mat-icon>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>email</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="email" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>label</mat-label>
-                        <mat-select disableRipple>
+                        <mat-select disableRipple formControlName="option">
                             <mat-option value="1">Option 1</mat-option>
                             <mat-option value="2">Option 2</mat-option>
                             <mat-option value="3">Option 3</mat-option>
@@ -78,15 +68,14 @@
                 </div>
             </div>
 
-            <div fxLayout="row" fxLayoutGap="10px" style="display: flex;
-            align-items: center;">
+            <div fxLayout="row" fxLayoutGap="10px" class="body">
                 <div fxFlex>
-                    <mat-icon style="color: #e5e5e5;">phone</mat-icon>
+                    <mat-icon class="icon">phone</mat-icon>
                 </div>
                 <div fxFlex>
                     <mat-form-field appearance="lagacy" class="w-100">
                         <mat-label></mat-label>
-                        <mat-select disableRipple>
+                        <mat-select disableRipple formControlName="optionOne">
                             <mat-option value="1">Option 1</mat-option>
                             <mat-option value="2">Option 2</mat-option>
                             <mat-option value="3">Option 3</mat-option>
@@ -96,12 +85,12 @@
                 <div fxFlex>
                     <mat-form-field appearance="legacy" class="w-100">
                         <mat-label>phone</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input formControlName="phone" matInput placeholder="Placeholder">
                     </mat-form-field>
                 </div>
                 <div fxFlex>
                     <mat-label>label</mat-label>
-                    <mat-select disableRipple>
+                    <mat-select disableRipple formControlName="optionTwo">
                         <mat-option value="1">Option 1</mat-option>
                         <mat-option value="2">Option 2</mat-option>
                         <mat-option value="3">Option 3</mat-option>
@@ -110,32 +99,22 @@
                 </div>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
-                <mat-icon style="color: #e5e5e5;">insert_drive_file</mat-icon>
+            <div class="body">
+                <mat-icon class="icon">insert_drive_file</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>notes</mat-label>
-                    <input matInput placeholder="Placeholder">
+                    <input formControlName="notes" matInput placeholder="Placeholder">
                 </mat-form-field>
             </div>
             <mat-divider></mat-divider>
 
             <div fxLayout="row">
                 <div fxFlex>
-                    <button style="    color: #2278e8;
-                    background: #fff;
-                    outline: none;
-                    padding-top: 10px;" mat-flat-button color="primary">show more</button>
+                    <button class="button-showmore" mat-flat-button>show more</button>
                 </div>
                 <div fxFlex fxLayoutGap="10px">
-                    <button style="    color: #2278e8;
-                    background: #fff;
-                    outline: none;
-                    padding-top: 10px;" mat-flat-button color="primary">cancel</button>
-                    <button style="    color: #c3c4c5;
-                    background: #fff;
-                    outline: none;
-                    padding-top: 10px;" mat-flat-button color="primary">save</button>
+                    <button class="button-cancel" mat-dialog-close>cancel</button>
+                    <button class="button-save" type="submit" mat-flat-button color="primary">save</button>
                 </div>
             </div>
 

@@ -1,14 +1,7 @@
 <div class="app-users-show">
     <div fxLayout="row" style="position: relative;">
         <h4>Create new contact</h4>
-        <div style="display: flex;
-        border: 1px solid;
-        width: 100px;
-        border-radius: 30px;
-        padding: 3px 9px;
-        position: absolute;
-        left: 142px;
-        top: -2px;">
+        <div class="header">
             <mat-icon>label</mat-icon>
             <span>No Label</span>
 
@@ -16,10 +9,9 @@
     </div>
     <mat-divider style="box-shadow: 4px 4px 5px 1px #ebebeb;
     "></mat-divider>
-    <div fxLayout="column" style="overflow:auto; max-height: 300px;">
+    <div fxLayout="column" class="content">
         <form action="" style="padding: 35px;">
-            <div style="display: flex;
-                align-items: center;">
+            <div class="content-body">
                 <mat-icon>face</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Prifx</mat-label>
@@ -80,10 +72,8 @@
                     <input matInput placeholder="Placeholder">
                 </mat-form-field>
             </div>
-            <div style="display: flex;
-                align-items: center;">
-                <mat-icon style="color: #8f9091;
-            margin-right: 10px;">domain</mat-icon>
+            <div class="content-body">
+                <mat-icon class="icon">domain</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>company</mat-label>
                     <input matInput placeholder="Placeholder">
@@ -101,16 +91,14 @@
                     <input matInput placeholder="Placeholder">
                 </mat-form-field>
             </div>
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>mail_outline</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>email</mat-label>
                     <input matInput placeholder="Placeholder">
                 </mat-form-field>
             </div>
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>phone</mat-icon>
                 <mat-form-field class="w-100">
                     <mat-label></mat-label>
@@ -126,8 +114,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>place</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>iran</mat-label>
@@ -191,11 +178,9 @@
                     </mat-select>
                 </mat-form-field>
             </div>
-            <div style="display: flex;
-                    align-items: center;">
+            <div class="content-body">
 
-                <mat-icon style="color: #8f9091;
-                margin-right: 10px;">cake</mat-icon>
+                <mat-icon>cake</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Birthday</mat-label>
                     <input matInput placeholder="Placeholder">
@@ -203,8 +188,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>event_note</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Event</mat-label>
@@ -212,8 +196,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>insert_link</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Website</mat-label>
@@ -221,8 +204,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>group_work</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Relationship</mat-label>
@@ -230,8 +212,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>chat</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Chat</mat-label>
@@ -239,8 +220,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>phone_paused</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Internet call</mat-label>
@@ -248,8 +228,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>view_list</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>Custom field</mat-label>
@@ -257,8 +236,7 @@
                 </mat-form-field>
             </div>
 
-            <div style="display: flex;
-            align-items: center;">
+            <div class="content-body">
                 <mat-icon>insert_drive_file</mat-icon>
                 <mat-form-field appearance="legacy" class="w-100">
                     <mat-label>notes</mat-label>
@@ -269,20 +247,11 @@
 
             <div fxLayout="row">
                 <div fxFlex>
-                    <button style="    color: #2278e8;
-                    background: #fff;
-                    outline: none;
-                    padding-top: 10px;" mat-flat-button color="primary">show less</button>
+                    <button class=" button-showmore" mat-flat-button>show less</button>
                 </div>
                 <div fxFlex fxLayoutGap="10px">
-                    <button style="    color: #2278e8;
-                    background: #fff;
-                    outline: none;
-                    padding-top: 10px;" mat-flat-button color="primary">cancel</button>
-                    <button style="    color: #c3c4c5;
-                    background: #fff;
-                    outline: none;
-                    padding-top: 10px;" mat-flat-button color="primary">save</button>
+                    <button class="button-cancel" mat-dialog-close>cancel</button>
+                    <button button class="button-save " mat-flat-button>save</button>
                 </div>
             </div>
         </form>

@@ -18,6 +18,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatDividerModule } from "@angular/material/divider";
 import {MatTableModule} from '@angular/material/table';
+import { MatDialogModule } from "@angular/material/dialog";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -33,7 +34,8 @@ const MATERIAL_MODULES = [
   MatMenuModule,
   MatSidenavModule,
   MatDividerModule,
-  MatTableModule
+  MatTableModule,
+  MatDialogModule
 ];
 
 @NgModule({

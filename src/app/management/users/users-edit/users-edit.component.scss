@@ -1,0 +1,38 @@
+.app-users-edit {
+    .users-header {
+        display: flex;
+        border: 1px solid;
+        width: 100px;
+        border-radius: 30px;
+        padding: 3px 9px;
+        position: absolute;
+        left: 92px;
+        top: -3px;
+    }
+    .body {
+        display: flex;
+        align-items: center;
+        .icon {
+            color: #e5e5e5;
+        }
+    }
+    .button-showmore {
+        color: #2278e8;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+    .button-cancel {
+        color: #2278e8;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+        border-style: none;
+    }
+    .button-save {
+        color: #c3c4c5;
+        background: #fff;
+        outline: none;
+        padding-top: 10px;
+    }
+}
