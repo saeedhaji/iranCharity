@@ -15,7 +15,7 @@ export class UsersDetailComponent implements OnInit {
   openDialog() {
     const dialogRef = this.dialog.open(UsersEditComponent,{
       // height: '400px',
-      //  width: '600px', 
+      // width: '600px', 
     });
 
     dialogRef.afterClosed().subscribe(result => {
