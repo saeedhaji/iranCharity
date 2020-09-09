@@ -21,6 +21,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import { AccountIndexComponent } from "./account-index.component";
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { TestAccountDirective } from './test-account.directive';
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -40,7 +41,8 @@ const MATERIAL_MODULES = [
 @NgModule({
   declarations: [
     AccountComponent,
-    AccountIndexComponent
+    AccountIndexComponent,
+    TestAccountDirective
   ],
   imports: [
     CommonModule,
