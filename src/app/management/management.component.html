@@ -1,14 +1,29 @@
 <div class="app-management p-4">
 
-    <div gdGap="20px" gdColumns="repeat(auto-fill, minmax(203px, 1fr))">
-        <mat-card *ngFor="let item of cardList" [routerLink]="item.url">
-            <mat-icon>{{item.image}}</mat-icon>
-            <mat-card-content>
-                <p>
-                    {{item.name}}
-                </p>
+    <div gdGap="10px" gdColumns="repeat(auto-fill, minmax(203px, 1fr))">
+
+
+
+
+        <mat-card *ngFor="let item of cardList" [routerLink]="item.url" class="card-body">
+            <mat-card-content class="body-content">
+                <mat-icon class="icon">{{item.image}}</mat-icon>
+
+                <mat-card-title style="margin-top: 9px;">{{item.name}}</mat-card-title>
+
+
             </mat-card-content>
         </mat-card>
     </div>
 </div>
+<!-- 
+<mat-card *ngFor="let item of cardList" [routerLink]="item.url">
+    <mat-icon>{{item.image}}</mat-icon>
+    <mat-card-content>
+        <p>
+            {{item.name}}
+        </p>
+    </mat-card-content>
+</mat-card> -->
+
 <router-outlet></router-outlet>

@@ -62,13 +62,13 @@
             outline: none;
         }
         .button-new {
-            background: #1967d2;
-            text-transform: capitalize;
-            height: 30px;
-            min-width: 48px;
-            padding: 0;
+            text-decoration: none;
+            border: 1px solid;
+            padding: 2px;
+            border-radius: 8px;
+            color: #fff;
             font-size: 1.2em;
-            border-radius: 6px;
+            background: #1967d2;
         }
     }
 }
