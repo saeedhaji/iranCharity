@@ -1,0 +1,27 @@
+<div class="app-card-list">
+    <div fxFlex class="image">
+        <img src={{item.img}} alt="">
+    </div>
+    <div fxFlex class="body">
+        <div class="header">
+            <span>
+            {{item.title}}
+        </span>
+        </div>
+        <div>
+            <span class="text">
+            {{item.price}}
+        </span>
+        </div>
+        <div fxLayout="row" class="footer-card">
+            <div fxFlex="90%">
+                <span class="text-footer">
+                   {{item.place}}   
+            </span>
+            </div>
+            <div fxFlex="10%">
+                <mat-icon class="icon">{{item.icon}}</mat-icon>
+            </div>
+        </div>
+    </div>
+</div>

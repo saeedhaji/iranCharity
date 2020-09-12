@@ -1,0 +1,38 @@
+.app-card-list {
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+    .image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: 116px;
+            border-radius: 5px;
+        }
+    }
+    .body {
+        text-align: right;
+        padding: 12px;
+        direction: rtl;
+        .header {
+            margin-bottom: 14px;
+            span {
+                font-size: 0.7em;
+            }
+        }
+        .text {
+            color: #848484;
+            font-size: 13px;
+        }
+        .text-footer {
+            color: #848484;
+            font-size: 8px;
+        }
+        .icon {
+            color: #848484;
+        }
+    }
+}
