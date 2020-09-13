@@ -1,0 +1,34 @@
+<div class="app-selectcity-modal">
+    <div fxLayout="row">
+        <div fxFlex class="header">
+            <h4> انتخاب شهر </h4>
+            <button mat-dialog-close class="button-header">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+    </div>
+    <div fxLayout="row">
+        <form class="form w-100">
+            <mat-form-field class="w-100" style="text-align: justify;color: #a0a0a0;">
+                <input matInput placeholder="    جست‌و‌جوی سریع نام شهر       ">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </form>
+    </div>
+    <div>
+        <h3 class="visited-cities"> شهرهای پربازدید </h3>
+        <div gdGap="13px" gdColumns="repeat(auto-fill , minmax(100px,1fr))">
+            <div class="city-link" *ngFor="let city of visitedCities">
+                <a href="" class="city">{{city.name}}</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 class="all-cities"> همه‌ی شهرها </h3>
+        <div gdGap="13px" gdColumns="repeat(auto-fill , minmax(100px,1fr))">
+            <div class="city-link" *ngFor="let city of allCities">
+                <a href="" class="city">{{city.name}}</a>
+            </div>
+        </div>
+    </div>
+</div>

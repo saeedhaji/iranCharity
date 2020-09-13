@@ -1,0 +1,43 @@
+.app-selectcity-modal {
+    direction: rtl;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .button-header {
+            background: #fff;
+            border-style: none;
+            outline: none;
+        }
+    }
+    .form {}
+    .visited-cities {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-size: .90em;
+    }
+    .city-link {
+        display: flex;
+        align-items: center;
+        border: 1px solid #b14242;
+        width: 110px;
+        padding: 5px;
+        border-radius: 2px;
+        .city {
+            text-decoration: none;
+            color: #b14242;
+            margin: 0 auto;
+        }
+    }
+    .city-link :hover {
+        background-color: red;
+        color: #fff;
+    }
+    .all-cities {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-size: .90em;
+    }
+}
