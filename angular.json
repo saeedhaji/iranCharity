@@ -22,6 +22,7 @@
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "tsconfig.app.json",
+                        "showCircularDependencies": false,
                         "aot": true,
                         "assets": [
                             "src/favicon.ico",
@@ -121,6 +122,9 @@
                             "devServerTarget": "iranCharity:serve:production"
                         }
                     }
+                },
+                "options": {
+                    "showCircularDependencies": false
                 }
             }
         }

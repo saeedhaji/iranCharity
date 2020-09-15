@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { ListRoutingModule } from './list-routing.module';
 import { ListComponent } from './list.component';
-import { CardListModule } from "../card-list/card-list.module";
+import { FormsModule } from "@angular/forms";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { CardWishModule } from "../card-wish/card-wish.module";
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { CardListModule } from "../card-list/card-list.module";
   imports: [
     CommonModule,
     ListRoutingModule,
-    CardListModule
+    CardWishModule,
+    FormsModule,
+    FlexLayoutModule
   ],
   exports: [ListComponent]
 })

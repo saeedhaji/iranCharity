@@ -22,6 +22,20 @@ const routes: Routes = [
     path:'management',
     loadChildren:()=>import('./management/management.module').then((m)=>m.ManagementModule),
   },
+  {
+    path:'test',
+    loadChildren:()=>import('./test/test.module').then((m)=>m.TestModule),
+  },
+  {
+    path:'wishes',
+    loadChildren:()=>import('./wishes/wishes.module').then((m)=>m.WishesModule),
+  },
+  {
+    path:'public',
+    loadChildren:()=>import('./public/public.module').then((m)=>m.PublicModule),
+  },
+  
+  
 
 ];
 

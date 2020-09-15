@@ -1,0 +1,66 @@
+.app-about-us {
+    direction: rtl;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 866px;
+    text-align: right;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    .image-bazar {
+        background-image: url('/assets/img/bazaar-badge.7d73d57.png');
+        width: 138px;
+        height: 45px;
+        background: no-repeat 50%;
+        background-size: contain;
+        display: inline-block;
+        margin: 0 5px;
+        text-decoration: none;
+        color: black;
+    }
+    .image-appStore {
+        background-image: url('/assets/img/download.png');
+        width: 138px;
+        height: 45px;
+        background: no-repeat 50%;
+        background-size: contain;
+        display: inline-block;
+        margin: 0 5px;
+        text-decoration: none;
+        color: black;
+    }
+    .text {
+        font-size: 0.97em;
+        opacity: .9;
+    }
+    .header {
+        line-height: 1.28571429em;
+        margin: calc(1.75rem - .14286em) 0 .875rem;
+        font-weight: 700;
+        word-spacing: -5px;
+    }
+    .icon-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        a {
+            margin-right: 10px;
+            background: #a62626;
+            text-align: center;
+            width: 34px;
+            min-height: 1px;
+            color: #fff;
+            font-size: 2em;
+            font-weight: 700;
+            padding: 11px 0px 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    }
+    .title-footer {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-left: .1em;
+    }
+}

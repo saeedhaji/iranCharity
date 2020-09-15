@@ -1,8 +1,7 @@
 <div class="app-list">
-    <div fxLayout="row">
 
+    <div gdGap="10px" gdColumns="repeat(auto-fill , minmax(300px,1fr))" style="align-content: center;
+    padding: 10px;">
+        <app-card-wish [item]="item" *ngFor="let item of cardList"></app-card-wish>
     </div>
-</div>
-<div gdGap="0px" gdColumns="repeat(auto-fill, minmax(300px,1fr))">
-    <app-card-list [item]="item" *ngFor="let item of cardList"></app-card-list>
 </div>

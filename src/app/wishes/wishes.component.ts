@@ -9,6 +9,8 @@ export class WishesComponent implements OnInit {
 
   constructor() { }
 
+  
+
   ngOnInit(): void {
   }
 

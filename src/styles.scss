@@ -5,7 +5,45 @@ body {
     height: 100%;
 }
 
+@font-face {
+    font-family: iranSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("/assets/fonts/IRANSansWeb.normal.woff2") format("woff")
+}
+
+@font-face {
+    font-family: iranSans;
+    font-style: normal;
+    src: url("/assets/fonts/IRANSansWeb.normal.woff2") format("woff")
+}
+
+@font-face {
+    font-family: iranSans;
+    font-style: bold;
+    font-weight: 700;
+    src: url("/assets/fonts/IRANSansWeb_Bold.woff2") format("woff")
+}
+
+@font-face {
+    font-family: iranSans;
+    font-style: bolder;
+    font-weight: 800;
+    src: url("/assets/fonts/IRANSansWeb_Bold.woff2") format("woff")
+}
+
+@font-face {
+    font-family: iranSans;
+    font-style: medium;
+    font-weight: 500;
+    src: url("/assets/fonts/IRANSansWeb_Medium.woff2") format("woff")
+}
+
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: iranSans, "Helvetica Neue", sans-serif;
+}
+
+* {
+    font-family: iranSans;
 }
