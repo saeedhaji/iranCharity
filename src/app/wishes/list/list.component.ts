@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WishesService } from "../wishes.service";
 
 
 interface  CardListItemInterface{
@@ -39,24 +40,32 @@ constructor(
 export class ListComponent implements OnInit {
 
 
-  cardList:CardListItemInterface[]=[
+  cardList:any[]=[
 
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
-    new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
+    // new CardListItemModel('./assets/img/wXbhbtrA.jpg','فرش ماشینی گل برجسته طرح ابریشم دوتخته ۶متری','۱,۲۰۰,۰۰۰ تومان',' لحظاتی پیش در چهارصد دستگاه','alternate_email'),
   ];
 
 
-  constructor() { }
+  constructor(private wishesService:WishesService) { }
 
   ngOnInit(): void {
+    this.getWisheList();
+  }
+
+  private getWisheList(){
+    this.wishesService.getWishes().subscribe((res:any)=>{
+      console.log(res);
+      this.cardList = res;
+    });
   }
 
 }

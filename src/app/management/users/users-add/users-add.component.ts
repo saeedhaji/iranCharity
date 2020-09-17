@@ -3,6 +3,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { UsersShowComponent } from "../users-show/users-show.component";
 import { FormGroup } from "@angular/forms";
 import { USER_FORM } from "./user-form";
+import { UsersService } from "../users.service";
 
 @Component({
   selector: 'app-users-add',
@@ -12,7 +13,8 @@ import { USER_FORM } from "./user-form";
 export class UsersAddComponent implements OnInit {
 
   userForm:FormGroup=USER_FORM.create();
-  constructor(public dialog: MatDialog) { }
+
+  constructor(public dialog: MatDialog,private usersService:UsersService ) { }
 
 
   openDialog() {
@@ -31,9 +33,19 @@ export class UsersAddComponent implements OnInit {
 
   onSubmit(){
     if(this.userForm.valid){
-      console.log(this.userForm.getRawValue());
+      this.usersService.saveUser(this.userForm.getRawValue()).subscribe(res=>{
+        console.log(res)
+      })
     }else{
       console.log('saeed')
     }
   }
+
+  onSaveClick(){
+    this.usersService.getUsers().subscribe((res)=>{
+        console.log(res);
+      }
+    )
+  }
+
 }

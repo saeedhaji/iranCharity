@@ -4,11 +4,11 @@
             <div fxLayout=column>
                 <div class="header">
                     <mat-icon class="icon-add">add</mat-icon>
-                    <button class="create-button" mat-raised-button (click)="openDialog()">create contact</button>
+                    <button class="create-button" mat-raised-button (click)="openDialog()">create users</button>
                 </div>
                 <div class="add-contact">
                     <mat-icon class="icon-contact">face</mat-icon>
-                    Contacts
+                    users
                 </div>
                 <div class="freguently-contact">
                     <mat-icon class="icon-history">history</mat-icon>
@@ -26,6 +26,16 @@
                 <a class="button-new" href="">New</a>
             </div>
         </div>
+        <div fxFlex>
+
+            <mat-list role="list" *ngFor="let item of userList">
+                <mat-list-item role="listitem">{{item.firstName}}</mat-list-item>
+                <mat-list-item role="listitem"> {{item.lastName}}</mat-list-item>
+                <mat-list-item role="listitem">{{item.email}}</mat-list-item>
+                <mat-list-item role="listitem"><button mat-button color="primary" (click)="onDeleteUserClick(item)">Delete</button></mat-list-item>
+            </mat-list>
+        </div>
+
     </div>
 </div>
 <button class="create-button" mat-raised-button (click)="openDialogOne()">detail contact</button>

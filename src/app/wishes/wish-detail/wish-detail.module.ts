@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { UsersListRoutingModule } from './users-list-routing.module';
-import { UsersListComponent } from './users-list.component';
+import { WishDetailRoutingModule } from './wish-detail-routing.module';
+import { WishDetailComponent } from "./wish-detail.component";
+
+
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -19,11 +21,6 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatDividerModule } from "@angular/material/divider";
-import { UsersAddModule } from "../users-add/users-add.module";
-import {MatTableModule} from '@angular/material/table';
-import { UsersDetailModule } from "../users-detail/users-detail.module";
-import { UsersEditModule } from "../users-edit/users-edit.module";
-import { MatListModule } from "@angular/material/list";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -38,25 +35,18 @@ const MATERIAL_MODULES = [
   MatTabsModule,
   MatMenuModule,
   MatSidenavModule,
-  MatDividerModule,
-  MatTableModule,
-  MatIconModule,
-  MatListModule 
+  MatDividerModule
 ];
 
 @NgModule({
-  declarations: [UsersListComponent],
+  declarations: [WishDetailComponent],
   imports: [
     CommonModule,
-    UsersListRoutingModule,
+    WishDetailRoutingModule,
     ... MATERIAL_MODULES, 
     FormsModule ,
     FlexLayoutModule,
     ReactiveFormsModule,
-    UsersAddModule,
-    UsersDetailModule,
-    UsersEditModule
-  ],
-  exports: [UsersListComponent]
+  ]
 })
-export class UsersListModule { }
+export class WishDetailModule { }

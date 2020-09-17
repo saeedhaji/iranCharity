@@ -1,0 +1,101 @@
+.app-wish-detail {
+    margin: 0 auto;
+    padding-top: 50px;
+    .image-one {
+        max-width: 359px;
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .image-two {
+        max-width: 60px;
+        img {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-left: 146px
+        }
+    }
+    .form {
+        width: 73%;
+    }
+    .text {
+        p {
+            color: #9c9c9c;
+        }
+        a {
+            color: #707070;
+            text-decoration: none;
+            padding: 10px 0 1px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .header-body {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        .title-body {
+            margin-right: 2.30em;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        .text-body {
+            font-size: 0.75em;
+            margin-right: 4em;
+            color: #9c9c9c;
+            line-height: 0;
+        }
+    }
+    .button-show {
+        font-size: 10px;
+        button {
+            font-size: 11px;
+            height: 32px;
+            outline: none;
+            color: #898989;
+        }
+    }
+    .button-body {
+        display: flex;
+        .button-chat {
+            margin-right: 5px;
+            font-size: 11px;
+            height: 32px;
+            outline: none;
+            color: #898989;
+        }
+        .button-contact {
+            background: #a62626;
+            color: #fff;
+            font-size: 11px;
+            height: 32px;
+            outline: none;
+        }
+    }
+    .text-city {
+        a {
+            color: #b54c4c;
+            text-decoration: none;
+        }
+    }
+    .description {
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 1em;
+        span {
+            font-weight: 600;
+        }
+    }
+    .text-footer {
+        p {
+            text-align: right;
+            line-height: 3;
+            color: #9c9c9c;
+            font-size: 1em;
+            margin-right: 1em;
+        }
+    }
+}

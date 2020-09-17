@@ -1,6 +1,6 @@
 <div class="app-users-add">
     <div fxLayout="row" style="position: relative;">
-        <h4>Create new contact</h4>
+        <h4>Create new users</h4>
         <div class="header-users" fxHide.lt-md>
             <mat-icon>label</mat-icon>
             <span>No Label</span>
@@ -90,7 +90,7 @@
                 </div>
                 <div fxFlex fxLayoutGap="10px" style="display: flex;">
                     <button class="button-cancel" mat-dialog-close>cancel</button>
-                    <button type="submit" class="button-save" mat-flat-button>save</button>
+                    <button type="submit" class="button-save" mat-flat-button (click)="onSaveClick()">save</button>
                 </div>
             </div>
 

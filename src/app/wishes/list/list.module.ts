@@ -6,6 +6,7 @@ import { ListComponent } from './list.component';
 import { FormsModule } from "@angular/forms";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { CardWishModule } from "../card-wish/card-wish.module";
+import { RouterModule } from "@angular/router";
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CardWishModule } from "../card-wish/card-wish.module";
     ListRoutingModule,
     CardWishModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule
   ],
   exports: [ListComponent]
 })

@@ -2,12 +2,12 @@
     .header {
         display: flex;
         border: 1px solid;
-        width: 100px;
         border-radius: 30px;
         padding: 3px 9px;
         position: absolute;
-        left: 142px;
+        left: 155px;
         top: -2px;
+        align-items: center;
     }
     .content {
         overflow: auto;

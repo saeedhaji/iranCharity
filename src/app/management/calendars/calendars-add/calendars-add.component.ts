@@ -3,6 +3,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { CalendarsShowComponent } from "../calendars-show/calendars-show.component";
 import { FormGroup } from "@angular/forms";
 import { CALENDAR_FORM } from "./calendar-form";
+import { UsersService } from "../../users/users.service";
 
 @Component({
   selector: 'app-calendars-add',
@@ -13,7 +14,7 @@ export class CalendarsAddComponent implements OnInit {
 
   calendarForm:FormGroup=CALENDAR_FORM.create();
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog ,private usersService:UsersService) { }
 
 
 
@@ -31,11 +32,21 @@ export class CalendarsAddComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
   onSubmit(){
     if(this.calendarForm.valid){
-      console.log(this.calendarForm.getRawValue());
+      this.usersService.saveUser(this.calendarForm.getRawValue()).subscribe(res=>{
+        console.log(res)
+      })
     }else{
       console.log('saeed')
     }
+  }
+
+  onSaveClick(){
+    this.usersService.getUsers().subscribe((res)=>{
+        console.log(res);
+      }
+    )
   }
 }

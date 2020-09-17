@@ -3,6 +3,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { RolesShowComponent } from "../roles-show/roles-show.component";
 import { FormGroup } from "@angular/forms";
 import { ROLE_FORM } from "./role-form";
+import { UsersService } from "../../users/users.service";
 
 @Component({
   selector: 'app-roles-add',
@@ -12,7 +13,8 @@ import { ROLE_FORM } from "./role-form";
 export class RolesAddComponent implements OnInit {
 
   roleForm:FormGroup=ROLE_FORM.create();
-  constructor(public dialog: MatDialog) { }
+
+  constructor(public dialog: MatDialog ,private usersService:UsersService ) { }
 
 
 
@@ -29,11 +31,21 @@ export class RolesAddComponent implements OnInit {
   
   ngOnInit(): void {
   }
+  
   onSubmit(){
     if(this.roleForm.valid){
-      console.log(this.roleForm.getRawValue());
+      this.usersService.saveUser(this.roleForm.getRawValue()).subscribe(res=>{
+        console.log(res)
+      })
     }else{
       console.log('saeed')
     }
+  }
+
+  onSaveClick(){
+    this.usersService.getUsers().subscribe((res)=>{
+        console.log(res);
+      }
+    )
   }
 }

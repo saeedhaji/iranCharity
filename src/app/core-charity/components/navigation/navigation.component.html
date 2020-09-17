@@ -2,7 +2,7 @@
     <div fxLayout="row" style="align-items: center;">
         <div fxFlex>
             <div fxLayout="row">
-                <h1 class="header">دیوار</h1>
+                <a class="header" routerLink="/wishes/list">دیوار</a>
                 <div class="selection">
                     <button (click)="openDialog()" class="button-nav">
                    <mat-icon class="icon-down">
@@ -16,10 +16,10 @@
         <div fxFlex class="nav-link" fxHide.lt-md>
             <a href="">  دیوار من </a>
             <a href="">   چت    </a>
-            <a href="/public/about-us">  درباره ما  </a>
+            <a routerLink="/public/about-us">  درباره ما  </a>
             <a href="">  بلاگ  </a>
-            <a href="/public/privacy-policy">   پشتیبانی و قوانین   </a>
-            <a href="/public/contact-us">   تماس با ما   </a>
+            <a routerLink="/public/privacy-policy">   پشتیبانی و قوانین   </a>
+            <a routerLink="/public/contact-us">   تماس با ما   </a>
         </div>
         <div>
             <a class="nav-item" href="">   ثبت رایگان آگهی   </a>

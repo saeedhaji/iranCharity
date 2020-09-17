@@ -3,6 +3,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { EventsShowComponent } from "../events-show/events-show.component";
 import { FormGroup } from "@angular/forms";
 import { EVENT_FORM } from "./event-form";
+import { UsersService } from "../../users/users.service";
 
 @Component({
   selector: 'app-events-add',
@@ -10,9 +11,10 @@ import { EVENT_FORM } from "./event-form";
   styleUrls: ['./events-add.component.scss']
 })
 export class EventsAddComponent implements OnInit {
+
   eventForm:FormGroup=EVENT_FORM.create();
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog ,private usersService:UsersService) { }
 
 
 
@@ -32,9 +34,18 @@ export class EventsAddComponent implements OnInit {
 
   onSubmit(){
     if(this.eventForm.valid){
-      console.log(this.eventForm.getRawValue());
+      this.usersService.saveUser(this.eventForm.getRawValue()).subscribe(res=>{
+        console.log(res)
+      })
     }else{
       console.log('saeed')
     }
+  }
+
+  onSaveClick(){
+    this.usersService.getUsers().subscribe((res)=>{
+        console.log(res);
+      }
+    )
   }
 }

@@ -16,6 +16,10 @@ const routes: Routes = [
         path: 'list',
         loadChildren:()=>import('./list/list.module').then((m)=>m.ListModule),
       },
+      {
+        path: 'wish-detail',
+        loadChildren:()=>import('./wish-detail/wish-detail.module').then((m)=>m.WishDetailModule),
+      },
      
     ]
   }

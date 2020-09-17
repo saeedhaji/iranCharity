@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreCharityModule } from "./core-charity";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,11 @@ import { CoreCharityModule } from "./core-charity";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CoreCharityModule
+    CoreCharityModule,
+    HttpClientModule,
+    
+  
+
  
   ],
   providers: [],

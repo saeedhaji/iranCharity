@@ -14,4 +14,5 @@ export class CardWishComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
 import { UsersAddComponent } from "../users-add/users-add.component";
 import { UsersDetailComponent } from "../users-detail/users-detail.component";
+import { UsersService } from "../users.service";
 // import { UsersEditComponent } from "../users-edit/users-edit.component";
 
 export interface PeriodicElement {
@@ -34,8 +35,17 @@ export class UsersListComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
+
+  firstName:string='';
+  lastName:string='';
+  email:string='';
+
+  userList:any[]=[
+    
+
+  ];
   
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,private usersService:UsersService) { }
 
   openDialog() {
     const dialogRef = this.dialog.open(UsersAddComponent,{
@@ -61,6 +71,24 @@ export class UsersListComponent implements OnInit {
 
 
   ngOnInit(): void {
+
+    this.getUsersList();
+  }
+
+
+  private getUsersList(){
+    this.usersService.getUsers().subscribe((res:any)=>{
+      console.log(res);
+      this.userList = res;
+    });
+  }
+
+
+  
+  onDeleteUserClick(user: any){
+    this.usersService.removeUser(user.id).subscribe(res=>{
+      console.log(res)
+    });
   }
 
 }

@@ -20,6 +20,7 @@ import { MatTabsModule } from "@angular/material/tabs";
 import { FormsModule } from "@angular/forms";
 import { LocationModule } from "../location/location.module";
 import { LocationComponent } from "../location/location.component";
+import {RouterModule} from '@angular/router';
 
 const MATEREAL_MODULE=[
   MatButtonModule,
@@ -45,7 +46,8 @@ const MATEREAL_MODULE=[
     ...MATEREAL_MODULE,
     FormsModule,
     FlexLayoutModule,
-    LocationModule
+    LocationModule,
+    RouterModule
   ],
   exports: [NavigationComponent],
   entryComponents:[

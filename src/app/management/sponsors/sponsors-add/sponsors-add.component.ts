@@ -3,6 +3,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { SponsorsShowComponent } from "../sponsors-show/sponsors-show.component";
 import { SPONSOR_FORM } from "../sponsor-form";
 import { FormGroup } from "@angular/forms";
+import { UsersService } from "../../users/users.service";
 
 @Component({
   selector: 'app-sponsors-add',
@@ -12,7 +13,7 @@ import { FormGroup } from "@angular/forms";
 export class SponsorsAddComponent implements OnInit {
   sponsorForm:FormGroup=SPONSOR_FORM.create();
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog ,private usersService:UsersService) { }
 
 
   openDialog() {
@@ -31,9 +32,18 @@ export class SponsorsAddComponent implements OnInit {
 
   onSubmit(){
     if(this.sponsorForm.valid){
-      console.log(this.sponsorForm.getRawValue());
+      this.usersService.saveUser(this.sponsorForm.getRawValue()).subscribe(res=>{
+        console.log(res)
+      })
     }else{
       console.log('saeed')
     }
+  }
+
+  onSaveClick(){
+    this.usersService.getUsers().subscribe((res)=>{
+        console.log(res);
+      }
+    )
   }
 }
