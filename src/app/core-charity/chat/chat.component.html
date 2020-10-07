@@ -1,0 +1,272 @@
+<div class="app-chat">
+    <mat-drawer-container class="chat-container" autosize>
+        <mat-drawer #drawer class="chat-header" mode="side">
+
+            <div class="chat-title">
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="">
+                    <div fxFlex class="image-header">
+                        <img src="/assets/img/profile.jpg" alt="">
+                        <mat-icon class="icon-chech">check</mat-icon>
+                    </div>
+                    <div fxFlex class="menu-header">
+                        <button mat-button [matMenuTriggerFor]="userMenu">
+                          <mat-icon>more_vert</mat-icon>
+                         </button>
+                        <mat-menu #userMenu="matMenu">
+                            <button mat-menu-item>Item 1</button>
+                            <button mat-menu-item>Item 2</button>
+                        </mat-menu>
+
+                    </div>
+                    <button class="button-clear" (click)="drawer.toggle();isShowing=true;">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </div>
+                <div fxLayout=row>
+                    <mat-form-field appearance="legacy" class="w-100">
+                        <mat-label></mat-label>
+                        <mat-icon class="icon-search">search</mat-icon>
+                        <input matInput placeholder="search or start new chat">
+
+                    </mat-form-field>
+                </div>
+                <mat-divider></mat-divider>
+            </div>
+
+            <div class="section" style="overflow: scroll;
+            max-height:400px;">
+                <div class="section-body">
+                    <h3 class="text-title">chat</h3>
+                    <div *ngIf="lodingServer">
+                        <mat-spinner></mat-spinner>
+                    </div>
+                    <div *ngFor="let item of chatList" fxLayout="row" fxLayoutAlign="space-between center" style="    margin-top: 50px;
+                margin-bottom: 20px;">
+                        <div fxFlex class="image-header">
+                            <img src="./assets/img/alice.jpg" alt="">
+                            <mat-icon class="icon-chech">check</mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <div fxLayout="column" class="text-body">
+                                <div>{{item.firstName}}</div>
+                                <div class="text-smite">{{item.lastName}}</div>
+                            </div>
+                        </div>
+                        <div fxFlex>
+                            <div fxLayout="column" class="text-date">
+                                <div> {{item.email}} </div>
+                                <div class="number">{{item.id}}</div>
+                            </div>
+                        </div>
+                        <mat-divider></mat-divider>
+                    </div>
+
+                </div>
+
+                <div class="section-body">
+                    <h3 class="text-title">contacts</h3>
+                    <div *ngFor="let item of chatList" fxLayout="row" fxLayoutAlign="space-between center" style="    margin-top: 50px;
+                margin-bottom: 20px;">
+                        <div fxFlex class="image-header">
+                            <img src="./assets/img/alice.jpg" alt="">
+                            <mat-icon class="icon-chech">check</mat-icon>
+                        </div>
+                        <div fxFlex>
+                            <div fxLayout="column" class="text-body">
+                                <div>{{item.firstName}}</div>
+                                <div class="text-smite">{{item.lastName}}</div>
+                            </div>
+                        </div>
+                        <mat-divider></mat-divider>
+                    </div>
+                </div>
+            </div>
+        </mat-drawer>
+
+        <div class="chat-sidenav-content">
+
+            <div class="chat-title">
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="padding-bottom: 10px;">
+                    <!-- <div fxFlex class="menu-header-open">
+                        <button type="button" mat-button (click)="drawer.toggle()">
+                          <mat-icon>more_vert</mat-icon>
+                        </button>
+                    </div> -->
+                    <div fxFlex class="image-header">
+                        <button *ngIf="isShowing" (click)="onHiddenClick()" type="button" mat-button (click)="drawer.toggle()">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                        <img src="./assets/img/alice.jpg" alt="">
+                        <mat-icon class="icon-chech-body">check</mat-icon>
+                    </div>
+                    <div fxFlex>
+                        <div class="text-content">Alice Freeman</div>
+                    </div>
+
+
+                    <div fxFlex class="menu-header">
+                        <button mat-button [matMenuTriggerFor]="menu">
+                          <mat-icon>more_vert</mat-icon>
+                         </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item>
+                                <span>Contact Info</span>
+                            </button>
+                        </mat-menu>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+            </div>
+            <div style="overflow: scroll;
+           max-height: 400px;">
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                padding-top: 10px;">
+                    <div fxFlex class="image-header">
+                        <img class="image" src="./assets/img/alice.jpg" alt="">
+                        <mat-icon class="icon-chech">check</mat-icon>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;">
+                            <div class="paragraph">
+                                Quickly come to the meeting room 1B, we have a big server issue
+                            </div>
+                            <div class="item-date">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                padding-top: 10px;position: relative;">
+
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;position: absolute;
+                        right: 10px;">
+                            <div class="para">
+                                Quickly come to the meeting room 1B, we have a big server issue
+                            </div>
+                            <div class="item-time">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                   margin-top: 76px;;">
+                    <div fxFlex class="image-header">
+                        <img class="image" src="./assets/img/alice.jpg" alt="">
+                        <mat-icon class="icon-chech">check</mat-icon>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;">
+                            <div class="paragraph-chat">
+                                lsjfo;gk;slfdkg;er
+                            </div>
+                            <div class="chat-long">
+                                Quickly come to the meeting room 1B, </div>
+                            <div class="item-date">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                padding-top: 10px;position: relative;padding-bottom: 90px;">
+
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;position: absolute;right: 10px;">
+
+                            <div class="para">
+                                Quickly come to the meeting room 1B, we have a big server issue
+                            </div>
+                            <div class="item-time">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                padding-top: 10px;">
+                    <div fxFlex class="image-header">
+                        <img class="image" src="./assets/img/alice.jpg" alt="">
+                        <mat-icon class="icon-chech">check</mat-icon>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;">
+                            <div class="paragraph">
+                                Quickly come to the meeting room 1B, we have a big server issue
+                            </div>
+                            <div class="item-date">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                padding-top: 10px;position: relative;">
+
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;position: absolute;
+                        right: 10px;">
+                            <div class="para">
+                                Quickly come to the meeting room 1B, we have a big server issue
+                            </div>
+                            <div class="item-time">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                   margin-top: 76px;;">
+                    <div fxFlex class="image-header">
+                        <img class="image" src="./assets/img/alice.jpg" alt="">
+                        <mat-icon class="icon-chech">check</mat-icon>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;">
+                            <div class="paragraph-chat">
+                                lsjfo;gk;slfdkg;er
+                            </div>
+                            <div class="chat-long">
+                                Quickly come to the meeting room 1B, </div>
+                            <div class="item-date">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="" style="
+                padding-top: 10px;position: relative;padding-bottom: 90px;">
+
+                    <div fxFlex>
+                        <div fxLayout="column" style="margin-left: 10px;position: absolute;right: 10px;">
+
+                            <div class="para">
+                                Quickly come to the meeting room 1B, we have a big server issue
+                            </div>
+                            <div class="item-time">
+                                3/22/17, 1:24 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+            </div>
+            <div fxLayout="row" class="form-footer">
+
+                <mat-form-field class="w-100">
+                    <mat-label></mat-label>
+
+                    <input matInput placeholder="Type your message">
+                    <mat-icon matSuffix class="">send</mat-icon>
+                </mat-form-field>
+            </div>
+        </div>
+
+
+
+
+    </mat-drawer-container>
+
+</div>

@@ -17,6 +17,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
+import { RouterModule } from "@angular/router";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -29,7 +30,8 @@ const MATERIAL_MODULES = [
   MatSelectModule,
   MatTooltipModule,
   MatTabsModule,
-  MatDividerModule
+  MatDividerModule,
+  RouterModule
 ];
 
 

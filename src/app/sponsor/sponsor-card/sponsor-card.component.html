@@ -1,0 +1,40 @@
+<div class="app-sponsor-card">
+    <mat-card style="min-height: 374px!important;">
+        <mat-card-header>
+            <div fxLayout="row" fxLayoutAlign="start center">
+                <div class="image">
+                    <img src="/assets/img/img1.png" alt="">
+                    <mat-icon class="icon-img">stop</mat-icon>
+                </div>
+                <div class="header" fxLayoutGap="10px">
+                    <mat-icon class="icon-header">home</mat-icon>
+                    <mat-icon class="icon-grade">grade</mat-icon>
+                </div>
+            </div>
+        </mat-card-header>
+        <div class="text">
+            <mat-card-title>{{item.textTitle}}</mat-card-title>
+            <mat-card-subtitle>{{item.textSubtitle}}</mat-card-subtitle>
+        </div>
+        <mat-card-content fxLayout="row" fxLayoutAlign="start end" style="    margin-left: 32px;">
+            <div fxFlex>
+                {{item.children}}
+            </div>
+            <div fxFlex style="display: flex;
+            justify-content: flex-end;">
+                {{item.years}}
+            </div>
+        </mat-card-content>
+        <div fxLayout="row" style="margin-left: 32px;">
+            <mat-icon>person</mat-icon>
+            <mat-icon>person</mat-icon>
+            <mat-icon>person</mat-icon>
+            <mat-icon>person</mat-icon>
+            <mat-icon>person</mat-icon>
+        </div>
+        <mat-card-actions class="mybutton">
+            <button mat-button> {{item.message}}</button>
+            <button mat-button>{{item.quick}}</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

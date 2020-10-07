@@ -15,6 +15,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ForgotpasswordRoutingModule } from "./forgotpassword-routing.module";
+import { RouterModule } from "@angular/router";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -40,7 +41,8 @@ const MATERIAL_MODULES = [
     FormsModule ,
     FlexLayoutModule,
     ReactiveFormsModule,
-    ForgotpasswordRoutingModule
+    ForgotpasswordRoutingModule,
+    RouterModule
   ],
 })
 export class ForgotpasswordModule { }

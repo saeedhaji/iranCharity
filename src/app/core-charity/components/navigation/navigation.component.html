@@ -24,9 +24,10 @@
         <div>
             <a class="nav-item" href="">   ثبت رایگان آگهی   </a>
         </div>
-        <div fxHide.md fxShow.lt-md>
+        <div fxHide fxShow.lt-md>
             <button class="button-menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon button with a menu icon">
-            <mat-icon>menu</mat-icon>
+            <mat-icon style="display: flex;
+            margin: 0 auto;">menu</mat-icon>
           </button>
             <mat-menu #menu="matMenu" class="menu-item">
                 <div style="position: relative;width: 15em;">

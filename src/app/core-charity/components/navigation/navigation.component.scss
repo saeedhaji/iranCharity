@@ -11,6 +11,9 @@
         color: red;
         margin-right: 10px;
         margin-top: 4px;
+        text-decoration: none;
+        font-size: 1.8em;
+        font-weight: 600;
     }
     .nav-link {
         a {
@@ -34,8 +37,9 @@
         border-style: none;
     }
     .selection {
-        margin-top: 11px;
+        margin-top: 16px;
         margin-right: 10px;
+        margin-bottom: 10px;
         .button-nav {
             position: relative;
             padding-left: 4.5em;

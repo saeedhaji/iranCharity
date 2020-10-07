@@ -2,11 +2,12 @@
     .events-header {
         display: flex;
         border: 1px solid;
-        width: 100px;
+        width: 102px;
+        align-items: center;
         border-radius: 30px;
         padding: 3px 9px;
         position: absolute;
-        left: 92px;
+        left: 80px;
         top: -3px;
     }
     .body {

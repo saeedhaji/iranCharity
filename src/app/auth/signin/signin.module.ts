@@ -17,6 +17,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
 import { SigninRoutingModule } from "./signin-routing.module";
+import { RouterModule } from "@angular/router";
 
 const MATERIAL_MODULES = [
   MatButtonModule,
@@ -42,7 +43,8 @@ const MATERIAL_MODULES = [
     FormsModule ,
     FlexLayoutModule,
     ReactiveFormsModule,
-    SigninRoutingModule
+    SigninRoutingModule,
+    RouterModule
   ],
 })
 export class SigninModule { }

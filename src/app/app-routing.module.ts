@@ -34,6 +34,14 @@ const routes: Routes = [
     path:'public',
     loadChildren:()=>import('./public/public.module').then((m)=>m.PublicModule),
   },
+  {
+    path:'sponsor',
+    loadChildren:()=>import('./sponsor/sponsor.module').then((m)=>m.SponsorModule),
+  },
+  {
+    path:'server-test',
+    loadChildren:()=>import('./server-test/server-test.module').then((m)=>m.ServerTestModule),
+  },
   
   
 
