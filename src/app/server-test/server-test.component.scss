@@ -1,0 +1,72 @@
+.app-server-test {
+    padding: 20px 10px;
+    .example-header-image {
+        background-image: url('/assets/img/alice.jpg');
+        background-size: cover;
+    }
+    .example-header-image-car {
+        background-image: url('/assets/img/5ac3626e-be1a-4a33-a836-207a630b15a1.jpg');
+        background-size: cover;
+        position: absolute;
+        width: 182px;
+        height: 120px;
+        border-radius: unset;
+    }
+    .example-header-image-one {
+        background-image: url('/assets/img/alice.jpg');
+        background-size: cover;
+        width: 130px;
+        height: 130px;
+        border-radius: 5px;
+    }
+    .form-container-header {
+        background-image: url('/assets/img/download.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 25px 0 30px;
+        margin-top: 20px;
+    }
+    .server-container-image {
+        background-image: url('/assets/img/download.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 25px 0 30px;
+        margin-top: 20px;
+    }
+    .example-spacer {
+        flex: 1 1 auto;
+    }
+    .saeed :hover {
+        background-color: green;
+        color: blue;
+    }
+    .vahid {
+        background-color: red;
+        color: #fff;
+    }
+    .iran-khodro {
+         :hover {
+            background-color: #9fc3ef;
+        }
+    }
+    .example-header-image-card {
+        width: 200px;
+        height: 200px;
+        border-radius: unset;
+        background-image: url('/assets/img/alice.jpg');
+        background-size: cover;
+    }
+    .example-header-image-position {
+        position: absolute;
+        left: 30px;
+        width: 150px;
+        height: 120px;
+        border-radius: 8px;
+        top: -93px;
+        background-image: url('/assets/img/alice.jpg');
+        background-size: cover;
+    }
+}

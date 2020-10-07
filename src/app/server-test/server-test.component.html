@@ -1,0 +1,2526 @@
+<div class="app-server-test">
+    <div class="header" fxLayout="row" fxLayoutAlign="" fxLayoutGap="">
+        <div fxFlex>
+            <p>
+                <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+            </p>
+        </div>
+        <div fxFlex>
+            <div>
+                <span matBadge="4" matBadgeOverlap="false"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <section-one zadan menu be sorti ke dar do taraf safhe bashand v menu baray respansive kardan v zadan fxHide v fxShow v kami style dadn be menu> -->
+    <div class="header" fxLayout="row" fxLayoutAlign="start space-between " fxLayoutGap="">
+        <div fxFlex fxHide.lt-md>
+            <a href=""> salam </a>
+        </div>
+        <div fxFlex fxHide.lt-md fxLayoutGap="10px" fxLayoutAlign="end end">
+            <a href=""> salam </a>
+            <a href=""> salam </a>
+            <a href=""> salam </a>
+            <a href=""> salam </a>
+            <a href=""> salam </a>
+            <a href=""> salam </a>
+        </div>
+        <div fxFlex fxHide fxShow.lt-md>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <div style="padding-left: 10px;">
+                    <a style="text-decoration: none; color: black;" href=""> salam </a>
+                </div>
+                <div>
+                    <a href=""> salam </a>
+                </div>
+                <div>
+                    <a href=""> salam </a>
+                </div>
+                <div>
+                    <a href=""> salam </a>
+                </div>
+                <div>
+                    <a href=""> salam </a>
+                </div>
+            </mat-menu>
+        </div>
+    </div>
+    <!-- </section-one> -->
+
+    <!-- <section-two zadan menu be sorati ke item az hamdegar fasele dashte bashand> -->
+    <div class="header1" fxLayout="row" fxHide.lt-md fxLayoutAlign=" " fxLayoutGap="">
+        <div fxFlex>
+            <a href=""> mohammad </a>
+        </div>
+        <div fxFlex fxLayoutGap="2px" fxLayoutAlign="space-between ">
+            <a href=""> mohammad </a>
+            <a href=""> mohammad </a>
+            <a href=""> mohammad </a>
+            <a href=""> mohammad </a>
+            <a href=""> mohammad </a>
+            <a href=""> mohammad </a>
+
+        </div>
+    </div>
+    <!-- </section-two> -->
+
+    <!-- <section-three zadan anva button> -->
+    <div fxLayout="row" fxLayout.lt-md="column">
+        <button mat-button color="primary">Primary</button>
+        <button mat-raised-button color="primary">Primary</button>
+        <button mat-stroked-button color="accent">Accent</button>
+        <button mat-flat-button color="warn">Warn</button>
+        <button mat-icon-button aria-label="Example icon-button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+        <button mat-fab aria-label="Example icon-button with a heart icon">
+    <mat-icon>face </mat-icon>
+  </button>
+        <button mat-mini-fab aria-label="Example icon-button with a heart icon" style="color: black;
+            background: #c7c1c1;outline:none;">
+    <mat-icon>clear</mat-icon>
+  </button>
+        <a mat-mini-fab routerLink=".">saeed</a>
+    </div>
+    <!-- </section-three> -->
+
+    <!-- <section-four zadan card va style dadan be anhe> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-four> -->
+
+    <!-- <section-five zadan card bedon image middle> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-five> -->
+
+    <!-- <section-six zadan card va delete kardan button va down image va title > -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-six> -->
+
+    <!-- <section-seven zadan card bedon title va ghardadan image balaye matn> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+
+                    <span>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <span>
+
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <span>
+
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+
+                    <span>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-seven> -->
+
+    <!-- <section-eight zadan card va ghardadan image kenar text> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-eight> -->
+
+    <!-- <section-nine zadan card va ghardadan image kenar title va zer title text ghardadan> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-nine> -->
+
+    <!-- <section-ten zadan card va ghardadan buttons va ba justify-content kardan be center right left space-between space-evenly space-around an ra tanzim konim> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-ten> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 200px;">
+
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions style="display: flex;
+                align-items: center;
+                justify-content: space-around;">
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <!-- <section-eleven zadan card be sorti ke image yk tarf va text yk tarf degar ba style va zadan ngFor Va estefadeh kardardan
+        az layout Grid be hamrhe zadan service va deta ra az server gerftan > -->
+    <!-- <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; "> -->
+    <div gdGap="10px" gdColumns="repeat(auto-fill , minmax(253px,1fr))">
+        <div [ngClass]="{saeed:'true'}" *ngFor="let item of cardList">
+            <mat-card [ngClass]="{vahid:'true'}">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image-one">
+                    </div>
+                    <div style="text-align: right;
+                    direction: rtl;">
+                        <mat-card-title style="font-size: 1em;">
+                            {{item.firstName}}
+                        </mat-card-title>
+                        <mat-card-subtitle [ngClass]="{saeed:'true'}" [ngClass]="{vahid:'true'}" style="padding-top: 32px;">
+                            <p style="direction: rtl;">
+                                {{item.lastName}}
+                            </p>
+                            <p style="display: flex;
+                        align-items: center;
+                        position: relative;font-size: 0.85em;">
+                                {{item.email}}
+                                <mat-icon style="    position: absolute;
+                            left: -20px;">face</mat-icon>
+                            </p>
+                        </mat-card-subtitle>
+                    </div>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- </section-eleven> -->
+
+    <!-- <section-toweleven  zadan form date> -->
+    <mat-form-field class="example-full-width" appearance="outline" class="pt-4">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <!-- </section-toweleven> -->
+
+    <!-- <section-three zadan ek box az form be hamrah style> -->
+    <div fxLayout="column" fxLayoutAlign="">
+        <form action="" style="border: 1px solid;
+        width: 280px;
+        margin: 0 auto;
+        padding: 30px 15px 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 8px rgba(255,80,16,0.4);
+        border-style: none;">
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Placeholder">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>LastName</mat-label>
+                    <input matInput placeholder="Placeholder">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Placeholder">
+                    <mat-icon matSuffix>mark_email_read</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Phone</mat-label>
+                    <input matInput placeholder="Placeholder">
+                    <mat-icon matSuffix>local_phone</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </p>
+            <button mat-flat-button color="primary" class="w-100">save</button>
+        </form>
+
+    </div>
+    <div fxLayout="column" fxLayoutAlign="" class="mt-4">
+
+        <form [formGroup]="serverForm" (submit)="onSubmit()" style="border: 1px solid;
+             width: 345px;
+             margin: 0 auto;
+             padding: 30px 15px 15px;
+             border-radius: 10px;
+             box-shadow: 0px 0px 6px 8px rgba(255,80,16,0.4);
+             border-style: none;">
+            <h1>salam saeed</h1>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Name</mat-label>
+                    <input formContorlName="name" matInput placeholder="Placeholder">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>LastName</mat-label>
+                    <input formContorlName="lastName" matInput placeholder="Placeholder">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Email</mat-label>
+                    <input formContorlName="email" matInput placeholder="Placeholder">
+                    <mat-icon matSuffix>mark_email_read</mat-icon>
+                </mat-form-field>
+            </p>
+            <button type="submit" mat-flat-button color="primary" class="w-100">save</button>
+        </form>
+
+    </div>
+    <!-- </section-three > -->
+
+    <!-- <section-fouty zadan background-image va zadan text ek samat va form samt degar ba style> -->
+    <div class="form-container-header">
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayout.lt-md="column-reverse">
+            <div fxFlex style="display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;">
+                <div fxLayout="column">
+                    <h2>salam saeed <strong>fawjefkdkf</strong></h2>
+                    <p>sakajerdgdljalfjdkflsdfjlasdjflsdj.</p>
+                    <span>jasdkljsadlkfgvnsadlkfajfklsjdlkfjsl.</span>
+                </div>
+                <!-- <div style="position: relative;">
+                    <button mat-flat-button color="primary" style="position: absolute;
+                top: 123px;
+                right: 30px;
+                padding: 0 20px;">curekj</button>
+                    <button mat-flat-button color="warn" style="position: absolute;
+                top: 123px;
+                padding: 0 18px 0;">jgsoierjg</button>
+                </div> -->
+            </div>
+            <div fxFlex>
+                <div fxLayout="column" fxLayoutAlign="" class="">
+
+                    <form action="" style="border: 1px solid;
+            width: 345px;
+            padding: 30px 15px 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px 8px rgba(255,80,16,0.4);
+            border-style: none;">
+                        <h1>salam saeed</h1>
+                        <p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Name</mat-label>
+                                <input matInput placeholder="Placeholder">
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>LastName</mat-label>
+                                <input matInput placeholder="Placeholder">
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Email</mat-label>
+                                <input matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>mark_email_read</mat-icon>
+                            </mat-form-field>
+                        </p>
+                        <button mat-flat-button color="primary" class="w-100">save</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- </section-fouty> -->
+
+    <!-- <section-fifty zadan ek samat image va samt degar form ba style > -->
+    <div fxLayout="row">
+        <div fxFlex fxHide.lt-md>
+            <div class="server-container-image">
+                <div fxLayout="column">
+                    <h2>charity</h2>
+                    <p>kdfledkmcvdkvldfd</p>
+                </div>
+            </div>
+        </div>
+        <div fxFlex>
+            <div fxLayout="column" fxLayoutAlign="" class="">
+
+                <form action="" style="border: 1px solid;
+        width: 100%;
+        padding: 30px 15px 15px;
+        border-radius: 10px;
+        border-style: none;">
+                    <h1>salam saeed</h1>
+                    <p>
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Name</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>LastName</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Email</mat-label>
+                            <input matInput placeholder="Placeholder">
+                            <mat-icon matSuffix>mark_email_read</mat-icon>
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>saeed</mat-label>
+                            <input matInput type="text" [(ngModel)]="value">
+                            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                              <mat-icon>close</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-selection-list #shoes>
+                            <mat-list-option>
+                                saeed
+                            </mat-list-option>
+                        </mat-selection-list>
+                    </p>
+
+                    <mat-checkbox class="example-margin">saeed</mat-checkbox>
+
+                    <p>
+                        <mat-divider></mat-divider>
+                    </p>
+                    <button mat-flat-button color="primary" class="w-100">save</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- </section-fifty> -->
+
+    <!-- <section-sixty zadan gride layout header menu content footer > -->
+    <div>
+        <mat-grid-list cols="4" rowHeight="100px">
+            <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+                {{tile.text}}
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <!-- </section-sixty> -->
+    <mat-selection-list #shoes>
+        <mat-list-option>
+            saeed
+        </mat-list-option>
+    </mat-selection-list>
+
+    <!-- <section-seventy zadan form ba card> -->
+    <div fxLayout="row" fxLayout.lt-md="column" class="pt-4">
+        <mat-card>
+            <mat-card-content>
+                <div fxFlex>
+                    <div fxLayout="column" fxLayoutAlign="" class="">
+
+                        <form action="">
+                            <h1>salam saeed</h1>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>Name</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>LastName</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                    <mat-icon matSuffix>mark_email_read</mat-icon>
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>saeed</mat-label>
+                                    <input matInput type="text" [(ngModel)]="value">
+                                    <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                                      <mat-icon>close</mat-icon>
+                                    </button>
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-selection-list #shoes>
+                                    <mat-list-option>
+                                        saeed
+                                    </mat-list-option>
+                                </mat-selection-list>
+                            </p>
+
+                            <mat-checkbox class="example-margin">saeed</mat-checkbox>
+
+                            <p>
+                                <mat-divider></mat-divider>
+                            </p>
+                            <button mat-flat-button color="primary" class="w-100">save</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+        <mat-card style="    margin: 0 auto;
+        height: 300px;
+        width: 300px;">
+            <mat-card-content>
+
+                <div fxFlex>
+                    <div fxLayout="column" fxLayoutAlign="" class="">
+
+                        <form action="">
+                            <h1>salam saeed</h1>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>Name</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>LastName</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </p>
+
+                            <p>
+                                <mat-divider></mat-divider>
+                            </p>
+                            <button mat-flat-button color="primary" class="w-100">save</button>
+                        </form>
+
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- </section-seventy> -->
+    <div fxLayout="row" fxLayout.lt-md="column" class="pt-4">
+        <mat-card>
+            <mat-card-content>
+
+                <div fxFlex>
+                    <div fxLayout="column" fxLayoutAlign="" class="">
+
+                        <form action="">
+                            <h1>salam saeed</h1>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>Name</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>LastName</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </p>
+
+                            <p>
+                                <mat-divider></mat-divider>
+                            </p>
+                            <button mat-flat-button color="primary" class="w-100">save</button>
+                        </form>
+
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <!-- <section-ehitty zadan card va mat list dakhel an > -->
+    <div fxLayout="row" fxLayout.lt-md="column" class="pt-4">
+        <div fxFlex>
+            <mat-card>
+                <mat-card-content>
+                    <mat-list>
+                        <div mat-subheader>Folders</div>
+
+                        <mat-list-item>
+
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <div mat-line>saeed</div>
+                            <div mat-line>haji</div>
+
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                    </mat-list>
+
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            </mat-card-header>
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list>
+
+                        <mat-list-item>
+
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <div mat-line>saeed</div>
+                            <div mat-line>haji</div>
+
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                    </mat-list>
+
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            </mat-card-header>
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list>
+
+                        <mat-list-item>
+
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <div mat-line>saeed</div>
+                            <div mat-line>haji</div>
+
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                    </mat-list>
+
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            </mat-card-header>
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list>
+
+                        <mat-list-item>
+
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <div mat-line>saeed</div>
+                            <div mat-line>haji</div>
+
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                    </mat-list>
+
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            </mat-card-header>
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-list>
+
+                        <mat-list-item>
+
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <div mat-line>saeed</div>
+                            <div mat-line>haji</div>
+
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                    </mat-list>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                <mat-card-subtitle>
+
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-card-subtitle>
+
+                                <div mat-card-avatar class="example-header-image"></div>
+                            </mat-card-header>
+
+                            <div mat-card-avatar class="example-header-image"></div>
+
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <!-- <section-ehitty-fxFlexTwo zadan card va matlist be torike two image two tarfe an va text dar middle an> -->
+        <div fxFlex>
+            <mat-card>
+                <mat-card-content>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                <mat-icon>
+
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-icon>
+
+                                <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                            </mat-card-header>
+
+                            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-content>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                <mat-icon matSuffix>
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-icon>
+                            </mat-card-header>
+
+                            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-content>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                <mat-icon matSuffix>
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-icon>
+                            </mat-card-header>
+
+                            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-content>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                <mat-icon matSuffix>
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-icon>
+                            </mat-card-header>
+
+                            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-content>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                <mat-icon matSuffix>
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-icon>
+                            </mat-card-header>
+
+                            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-content>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                <mat-icon matSuffix>
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-icon>
+                            </mat-card-header>
+
+                            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-content>
+
+                    <mat-list>
+                        <mat-list-item>
+
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>jflkajdl</mat-card-subtitle>
+                                <mat-icon>
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                </mat-icon>
+                            </mat-card-header>
+
+                            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+                        </mat-list-item>
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <!-- </section-ehitty-fxFlexTwo> -->
+    </div>
+    <!-- </section-ehitty> -->
+    <div fxLayout="row" fxLayout.lt-md="column" class="pt-4">
+        <div fxFlex>
+            <mat-card style="width: 100%;">
+                <div fxFlex>
+                    <mat-card-content>
+                        <mat-list>
+                            <mat-list-item>
+                                <mat-card-header>
+                                    <div mat-card-avatar class="example-header-image">
+                                    </div>
+                                    <mat-card-title>Shiba Inu</mat-card-title>
+                                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                </mat-card-header>
+                            </mat-list-item>
+                        </mat-list>
+                    </mat-card-content>
+                </div>
+                <div fxFlex style="display: flex;
+            align-items: center;
+            justify-content: flex-end;">
+
+                    <mat-card-content>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card style="width: 100%;">
+                <div fxFlex>
+                    <mat-card-content>
+                        <mat-list>
+                            <mat-list-item>
+                                <mat-card-header>
+                                    <div mat-card-avatar class="example-header-image">
+                                    </div>
+                                    <mat-card-title>Shiba Inu</mat-card-title>
+                                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                                </mat-card-header>
+                            </mat-list-item>
+                        </mat-list>
+                    </mat-card-content>
+                </div>
+                <div fxFlex style="display: flex;
+            align-items: center;
+            justify-content: flex-end;">
+
+                    <mat-card-content>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+
+    <!-- <section-twenty zadan yk row va gharar dadan two fxFlex va gzashtan icon edit cancel menu > -->
+
+    <div fxLayout="row" class="pt-4 pb-2">
+
+        <mat-card style="width: 100%;">
+            <div fxFlex>
+                <mat-card-content>
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            </mat-card-header>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card-content>
+            </div>
+            <div fxFlex fxHide.lt-md style="display: flex;
+            align-items: center;
+            justify-content: flex-end;">
+
+                <mat-card-content style="margin-top: -12px;">
+                    <mat-card-header>
+                        <button mat-icon-button [matMenuTriggerFor]="userMenu">
+                            <mat-icon style="font-size: 40px;
+                            margin-right: 20px;">more_vert</mat-icon>
+                          </button>
+                        <mat-menu #userMenu="matMenu">
+                            <button mat-menu-item>
+                              <mat-icon>dialpad</mat-icon>
+                              <span>Redial</span>
+                            </button>
+                            <button mat-menu-item disabled>
+                              <mat-icon>voicemail</mat-icon>
+                              <span>Check voice mail</span>
+                            </button>
+                            <button mat-menu-item>
+                              <mat-icon>notifications_off</mat-icon>
+                              <span>Disable alerts</span>
+                            </button>
+                        </mat-menu>
+                        <mat-icon style="font-size: 40px;
+                        margin-right: 20px;">
+                            cancel
+                        </mat-icon>
+                        <mat-icon style="font-size: 40px;
+                        margin-right: 20px;">
+                            edit
+                        </mat-icon>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-icon style="font-size: 40px;
+                        margin-right: 20px;">
+                            face
+                        </mat-icon>
+                    </mat-card-header>
+                </mat-card-content>
+            </div>
+        </mat-card>
+    </div>
+    <!-- </section-twenty> -->
+    <!-- <section-twenty-one gharar dadan icon left va right dar two samat form> -->
+    <div fxLayout="row" class="pt-4 pb-2">
+
+        <mat-card style="width: 100%;">
+            <button mat-mini-fab style="background: darkgray;">
+                <mat-icon>chevron_left</mat-icon>
+              </button>
+
+            <div fxFlex>
+                <mat-card-content>
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-header>
+                                <div mat-card-avatar class="example-header-image">
+                                </div>
+                                <mat-card-title>Shiba Inu</mat-card-title>
+                                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            </mat-card-header>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card-content>
+            </div>
+            <div fxFlex fxHide.lt-md style="display: flex;
+            align-items: center;
+            justify-content: flex-end;">
+
+                <mat-card-content style="margin-top: -12px;">
+                    <mat-card-header>
+                        <button mat-icon-button [matMenuTriggerFor]="userMenu">
+                            <mat-icon style="font-size: 40px;
+                            margin-right: 20px;">more_vert</mat-icon>
+                          </button>
+                        <mat-menu #userMenu="matMenu">
+                            <button mat-menu-item>
+                              <mat-icon>dialpad</mat-icon>
+                              <span>Redial</span>
+                            </button>
+                            <button mat-menu-item disabled>
+                              <mat-icon>voicemail</mat-icon>
+                              <span>Check voice mail</span>
+                            </button>
+                            <button mat-menu-item>
+                              <mat-icon>notifications_off</mat-icon>
+                              <span>Disable alerts</span>
+                            </button>
+                        </mat-menu>
+                        <mat-icon style="font-size: 40px;
+                        margin-right: 20px;">
+                            cancel
+                        </mat-icon>
+                        <mat-icon style="font-size: 40px;
+                        margin-right: 20px;">
+                            edit
+                        </mat-icon>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-icon style="font-size: 40px;
+                        margin-right: 20px;">
+                            face
+                        </mat-icon>
+                    </mat-card-header>
+                </mat-card-content>
+            </div>
+            <button mat-mini-fab style="background: darkgray;">
+                <mat-icon>chevron_right</mat-icon>
+              </button>
+
+        </mat-card>
+    </div>
+    <!-- </section-twenty-one> -->
+    <div fxLayout="row" class="pt-4 pb-2">
+        <mat-card style="width: 100%;display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 475px;">
+            <mat-card-content>
+                <mat-spinner></mat-spinner>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <!-- <section-twenty-two zadan table ba card> -->
+
+    <div fxLayout="row" class="pt-4 pb-2" style="align-items: center;
+    justify-content: center;">
+        <mat-card>
+            <mat-card-content>
+                <table matSort border="1">
+                    <tr>
+                        <th mat-sort-header="name">Dessert (100g)</th>
+                        <th mat-sort-header="calories">Calories</th>
+                        <th mat-sort-header="fat">Fat (g)</th>
+                        <th mat-sort-header="carbs">Carbs (g)</th>
+                        <th mat-sort-header="protein">Protein (g)</th>
+                    </tr>
+
+                    <tr>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                    </tr>
+                    <tr>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                    </tr>
+                    <tr>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                        <td>1354313</td>
+                    </tr>
+                </table>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- </section-twenty-two> -->
+    <!-- <section-twenty-three zadan mat-steper dar card> -->
+    <div fxLayout="row">
+        <mat-card>
+            <mat-card-content>
+                <mat-horizontal-stepper>
+                    <mat-step>
+                        <form>
+                            <ng-template matStepLabel>Fill out your name</ng-template>
+                            <mat-form-field>
+                                <mat-label>Name</mat-label>
+                                <input matInput placeholder="Last name, First name">
+                            </mat-form-field>
+                            <div>
+                                <button mat-button matStepperNext>Next</button>
+                            </div>
+                        </form>
+                    </mat-step>
+                    <mat-step label="Fill out your address">
+                        <form>
+                            <mat-form-field>
+                                <mat-label>Address</mat-label>
+                                <input matInput placeholder="Ex. 1 Main St, New York, NY">
+                            </mat-form-field>
+                            <div>
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Next</button>
+                            </div>
+                        </form>
+                    </mat-step>
+                    <mat-step>
+                        <ng-template matStepLabel>Done</ng-template>
+                        <p>You are now done.</p>
+                        <div>
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button>Reset</button>
+                        </div>
+                    </mat-step>
+                </mat-horizontal-stepper>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- </section-twenty-three> -->
+
+
+
+    <div fxLayout="row">
+        <mat-card>
+            <mat-card-content>
+                <mat-horizontal-stepper>
+                    <mat-step label="Fill out your address">
+                        <div fxFlex>
+                            <div fxLayout="column" fxLayoutAlign="" class="">
+
+                                <form action="">
+                                    <h1 style="color: hsl(24,100%,50%);">salam saeed</h1>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>Name</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>LastName</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+
+                                    <p>
+                                    </p>
+                                    <div>
+                                        <button mat-button matStepperPrevious>Back</button>
+                                        <button mat-button matStepperNext>Next</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </mat-step>
+                    <mat-step label="Fill out your address">
+                        <div fxFlex>
+                            <div fxLayout="column" fxLayoutAlign="" class="">
+
+                                <form action="">
+                                    <h1>salam saeed</h1>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>Name</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>LastName</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+
+                                    <p>
+                                    </p>
+                                    <div>
+                                        <button mat-button matStepperPrevious>Back</button>
+                                        <button mat-button matStepperNext>Next</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </mat-step>
+                    <mat-step label="Fill out your address">
+                        <div fxFlex>
+                            <div fxLayout="column" fxLayoutAlign="" class="">
+
+                                <form action="">
+                                    <h1>salam saeed</h1>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>Name</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>LastName</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+
+                                    <p>
+                                    </p>
+                                    <div>
+                                        <button mat-button matStepperPrevious>Back</button>
+                                        <button mat-button matStepperNext>Next</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </mat-step>
+                    <mat-step label="Fill out your address">
+                        <div fxFlex>
+                            <div fxLayout="column" fxLayoutAlign="" class="">
+
+                                <form action="">
+                                    <h1>salam saeed</h1>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>Name</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+                                    <p>
+                                        <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>LastName</mat-label>
+                                            <input matInput placeholder="Placeholder">
+                                        </mat-form-field>
+                                    </p>
+
+                                    <p>
+                                    </p>
+                                    <div>
+                                        <button mat-button matStepperPrevious>Back</button>
+                                        <button mat-button matStepperNext>Next</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </mat-step>
+                </mat-horizontal-stepper>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+
+
+    <!-- <section-twenty-four zadan ngIf bar ro menu> -->
+    <p>
+        <mat-toolbar color="primary">
+            <div class="header" fxLayout="row" fxLayoutAlign="start space-between " fxLayoutGap="">
+                <div *ngIf="!isHeadingMenu">
+                    <div fxFlex>
+                        <a href=""> salam </a>
+                    </div>
+                    <div fxFlex fxHide.lt-md fxLayoutGap="10px" fxLayoutAlign="end end">
+                        <a href=""> salam </a>
+                        <a href=""> salam </a>
+                        <a href=""> salam </a>
+                        <a href=""> salam </a>
+                        <a href=""> salam </a>
+                        <a href=""> salam </a>
+                    </div>
+                </div>
+                <div fxFlex *ngIf="isHeadingMenu">
+                    <button mat-icon-button [matMenuTriggerFor]="tolbarMenu">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                    <mat-menu #tolbarMenu="matMenu">
+                        <div style="padding-left: 10px;">
+                            <a style="text-decoration: none; color: black;" href=""> salam </a>
+                        </div>
+                        <div>
+                            <a href=""> salam </a>
+                        </div>
+                        <div>
+                            <a href=""> salam </a>
+                        </div>
+                        <div>
+                            <a href=""> salam </a>
+                        </div>
+                        <div>
+                            <a href=""> salam </a>
+                        </div>
+                    </mat-menu>
+                </div>
+            </div>
+        </mat-toolbar>
+        <button (click)="onChangeClick()">click</button>
+    </p>
+    <!-- </section-twenty-four> -->
+    <div fxLayout="row" class="pb-4" class="iran-khodro">
+        <mat-card style="width: 100%;">
+            <mat-card-header style="direction:rtl;position: relative;">
+                <div mat-card-avatar class="example-header-image-car">
+                </div>
+                <h1 style="margin-right: 183px;
+                color: red;font-size: 1.3em;">
+                    فروش فوق العاده - رانا پلاس - فروش فوق العاده مرحله چهارم محصولات ایران خودرو بخشنامه : 4333-
+                </h1>
+            </mat-card-header>
+            <a href="">
+                <mat-divider style="border-color:blue;width: 85%;"></mat-divider>
+            </a>
+            <mat-card-content style="height: 200px; margin-right: 130px;">
+                <div fxFlex>
+                    <div fxLayout="row" style="position: relative;">
+                        <div fxFlex style="position: absolute;right: 80px;top: 20px;">
+                            <table border="1" style="direction: rtl;
+                            border-style: none;
+                            border: unset;
+                            border-color: #fff; 
+                            line-height: 0;">
+                                <tr>
+                                    <th style="    padding: 15px 0px 15px 21px;">کد محصول:</th>
+                                    <td style="padding-right: 50px;">610</td>
+                                </tr>
+                                <tr>
+                                    <th style="    padding: 15px 0px 15px 0px;"> کد برنامه فروش:
+                                    </th>
+                                    <td style="padding-right: 50px;">99468</td>
+                                </tr>
+                                <tr>
+                                    <th style="padding: 15px;">سود مشارکت:</th>
+                                    <td style="padding-right: 50px;">0٪</td>
+                                </tr>
+                                <tr>
+                                    <th style="padding: 15px 0px 15px 0px;">
+                                        کد برنامه فروش:
+                                    </th>
+                                    <td style="padding-right: 50px;">99468</td>
+                                </tr>
+                                <tr>
+                                    <th style="padding: 15px;">سود مشارکت:</th>
+                                    <td style="padding-right: 50px;">0٪</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div fxFlex style="position: absolute;right: 250px;top: 20px;">
+                            <table border="1" style="direction: rtl;
+                            border-style: none;
+                            border: unset;
+                            border-color: #fff;margin-right: 175px;
+                            line-height: 0;">
+                                <tr>
+                                    <th style="padding: 15px 0px 15px 33px;">بیمه:</th>
+                                    <td style="padding-right: 187px;">دارای بیمه شخص ثالث</td>
+                                </tr>
+                                <tr>
+                                    <th style="    padding: 15px 0px 15px 0px;">ودیعه بیمه:</th>
+                                    <td style="padding-left: 103px;">ندارد</td>
+                                </tr>
+                                <tr>
+                                    <th style="    padding: 15px 0px 15px 13px;">بخشنامه:</th>
+                                    <td style="padding-left: 47px;">بخشنامه 1339</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div fxFlex style="padding: 91px 0px 0 90px;">
+                            <p style="color: green;margin-left: 50px;direction: rtl;">
+                                0 ریال
+
+
+                            </p>
+                            <p style="color: grey;line-height: 0;opacity: 0.5;">با احتساب ارزش افزوده</p>
+                            <button mat-raised-button style="margin-top: 20px;
+                            padding: 5px 15px 5px 15px;
+                            background: #0072ff;color: #fff;">
+                                سفارش خرید
+                                <mat-icon>add_shopping_cart</mat-icon>
+                                </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </mat-card-content>
+
+            <mat-divider></mat-divider>
+            <div style="direction: rtl;
+            float: right;
+            font-weight: 600;">
+
+                <p>تجهیزات خودرو:</p>
+            </div>
+
+        </mat-card>
+    </div>
+    <!-- <section-twenty-five zadan card be hamrh image va matn zer an> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center; " class="pt-4 mb-4">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <!-- <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header> -->
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <!-- <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header> -->
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <!-- <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header> -->
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <!-- <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header> -->
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-twenty-five> -->
+
+    <!-- <section-twenty-six gharar dadan image ba estefadeh az card> -->
+
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center; " class="pt-4 mb-4">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;box-shadow: unset;">
+
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px; box-shadow: unset;">
+
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;box-shadow: unset;">
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;box-shadow: unset;">
+                <img mat-card-image src="/assets/img/alice.jpg" alt="Photo of a Shiba Inu">
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-twenty-six> -->
+
+    <!-- <section-twenty-seven ba estefadeh az card text dar balay image va title va zadan border bottom dar card> -->
+
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex style="border: 1px solid #fff;
+        border-bottom-color: blue;
+        border-bottom-width: thick;">
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex style="border: 1px solid #fff;
+        border-bottom-color: blue;
+        border-bottom-width: thick;">
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex style="border: 1px solid #fff;
+        border-bottom-color: blue;
+        border-bottom-width: thick;">
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+        <div fxFlex style="border: 1px solid #fff;
+        border-bottom-color: blue;
+        border-bottom-width: thick;">
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                </mat-card-content>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+    <!-- </section-twenty-seven> -->
+
+    <!-- <section-twenty-eight estefadeh az card gharar dadn image va zer an title va text va link> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" style="align-items: center;justify-content: center;padding-top: 20px; ">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+
+                    <span>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        <h1>salam saeed</h1>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                    <div>
+
+                        <a href="">learn more</a>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+
+                    <span>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        <h1>salam saeed</h1>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                    <div>
+
+                        <a href="">learn more</a>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+
+                    <span>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        <h1>salam saeed</h1>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                    <div>
+
+                        <a href="">learn more</a>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;">
+                <mat-card-content>
+
+                    <span>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        <h1>salam saeed</h1>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </span>
+                    <div>
+
+                        <a href="">learn more</a>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+    <!-- </section-twenty-eight> -->
+
+    <!-- <section-twenty-nine estefadeh az card va width card ra tanzim va text dakhel card va zer card image va title zadan> -->
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayout.lt-md="column" fxLayoutGap="10px" style="padding-top: 20px; ">
+        <div>
+            <div fxFlex style="margin-right: 10px;">
+                <mat-card class="example-card" style=" width: 150px;">
+                    <mat-card-content>
+
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-content>
+                </mat-card>
+                <mat-card-header style="    margin-top: 20px;">
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </div>
+            <div fxFlex style="margin-right: 10px;">
+                <mat-card class="example-card" style=" width: 150px;">
+                    <mat-card-content>
+
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-content>
+                </mat-card>
+                <mat-card-header style="    margin-top: 20px;">
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </div>
+            <div fxFlex style="margin-right: 10px;">
+                <mat-card class="example-card" style=" width: 150px;">
+                    <mat-card-content>
+
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+                    </mat-card-content>
+                </mat-card>
+                <mat-card-header style="    margin-top: 20px;">
+                    <div mat-card-avatar class="example-header-image">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- </section-twenty-nine> -->
+
+    <!-- <section-twenty-ten estefadeh az card be torikeh yek tarf card image va yek tarf degar title va text bashad> -->
+
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" class="pb-4" style="align-items: center;justify-content: center; " class="pt-4 mb-4">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;height: 199px;
+            padding: 0;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image-card">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        <p style="    font-size: 0.8em;">
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                        </p>
+                    </mat-card-subtitle>
+
+                </mat-card-header>
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;height: 199px;
+            padding: 0;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image-card">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        <p style="    font-size: 0.8em;">
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                        </p>
+                    </mat-card-subtitle>
+
+                </mat-card-header>
+
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;height: 199px;
+            padding: 0;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image-card">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        <p style="    font-size: 0.8em;">
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                        </p>
+                    </mat-card-subtitle>
+
+                </mat-card-header>
+
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;height: 199px;
+            padding: 0;">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image-card">
+                    </div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>
+                        <p style="    font-size: 0.8em;">
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                        </p>
+                    </mat-card-subtitle>
+
+                </mat-card-header>
+
+            </mat-card>
+        </div>
+
+    </div>
+    <!-- </section-twenty-ten> -->
+
+    <!-- <section-therrtin estefadeh az card be torike image az card meghdari beron bashe va title va text zeresh va zadan table 
+    va yek khat va zer khat gharar dadan text va button>  -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" class="pt-4">
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;margin-top: 50px;">
+                <mat-card-header style="position: relative;" fxHide.lt-md>
+                    <div mat-card-avatar class="example-header-image-position">
+                    </div>
+                </mat-card-header>
+                <mat-card-title style="margin-top: 50px;">Shiba Inu</mat-card-title>
+                <mat-card-subtitle>
+                    <p>
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+                    </p>
+                </mat-card-subtitle>
+
+
+                <mat-card-content>
+                    <table>
+                        <tr style="border-bottom-style: solid;">
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-action>
+                    <p style="padding-top: 10px;">
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+                    </p>
+                    <button mat-raised-button color="primary">Primary</button>
+                </mat-card-action>
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;margin-top: 50px;">
+                <mat-card-header style="position: relative;" fxHide.lt-md>
+                    <div mat-card-avatar class="example-header-image-position">
+                    </div>
+                </mat-card-header>
+                <mat-card-title style="margin-top: 50px;">Shiba Inu</mat-card-title>
+                <mat-card-subtitle>
+                    <p>
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+                    </p>
+                </mat-card-subtitle>
+
+
+                <mat-card-content>
+                    <table>
+                        <tr style="border-bottom-style: solid;">
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-action>
+                    <p style="padding-top: 10px;">
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+                    </p>
+                    <button mat-raised-button color="primary">Primary</button>
+                </mat-card-action>
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;margin-top: 50px;">
+                <mat-card-header style="position: relative;" fxHide.lt-md>
+                    <div mat-card-avatar class="example-header-image-position">
+                    </div>
+                </mat-card-header>
+                <mat-card-title style="margin-top: 50px;">Shiba Inu</mat-card-title>
+                <mat-card-subtitle>
+                    <p>
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+                    </p>
+                </mat-card-subtitle>
+
+
+                <mat-card-content>
+                    <table>
+                        <tr style="border-bottom-style: solid;">
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-action>
+                    <p style="padding-top: 10px;">
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+
+                    </p>
+                    <button mat-raised-button color="primary">Primary</button>
+                </mat-card-action>
+
+            </mat-card>
+        </div>
+        <div fxFlex>
+            <mat-card class="example-card" style=" max-width: 400px;margin-top: 50px;">
+                <mat-card-header style="position: relative;" fxHide.lt-md>
+                    <div mat-card-avatar class="example-header-image-position">
+                    </div>
+                </mat-card-header>
+                <mat-card-title style="margin-top: 50px;">Shiba Inu</mat-card-title>
+                <mat-card-subtitle>
+                    <p>
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+                    </p>
+                </mat-card-subtitle>
+
+
+                <mat-card-content>
+                    <table>
+                        <tr style="border-bottom-style: solid;">
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                            <th> fadfad: </th>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-action>
+                    <p style="padding-top: 10px;">
+                        hgdvasdgfiedflksdklfjsldkjfvksd sakiekfkljfaljdfjdkdkjgkallaaa jalkdjflkasdjfkjasdjflaskdfafas adlkfjlaskdjflkdjajsdkfjalsdfjasdk
+                    </p>
+                    <button mat-raised-button color="primary">Primary</button>
+                </mat-card-action>
+
+            </mat-card>
+        </div>
+
+    </div>
+    <!-- </section-therrtin> -->
+
+
+
+</div>
