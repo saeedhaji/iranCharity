@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFondComponent } from "./page-not-fond/page-not-fond.component";
 
 
 const routes: Routes = [
@@ -30,10 +31,7 @@ const routes: Routes = [
     path:'wishes',
     loadChildren:()=>import('./wishes/wishes.module').then((m)=>m.WishesModule),
   },
-  {
-    path:'public',
-    loadChildren:()=>import('./public/public.module').then((m)=>m.PublicModule),
-  },
+
   {
     path:'sponsor',
     loadChildren:()=>import('./sponsor/sponsor.module').then((m)=>m.SponsorModule),
@@ -42,6 +40,18 @@ const routes: Routes = [
     path:'server-test',
     loadChildren:()=>import('./server-test/server-test.module').then((m)=>m.ServerTestModule),
   },
+  {
+    path:'public',
+    loadChildren:()=>import('./public/public.module').then((m)=>m.PublicModule),
+  },
+  {
+    path:'not-fond',
+    component:PageNotFondComponent
+  },
+  {
+    path:'**',redirectTo:'/not-fond'
+  }
+
   
   
 
